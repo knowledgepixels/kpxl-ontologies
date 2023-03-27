@@ -1,5 +1,6 @@
-@prefix this: <https://w3id.org/kpxl/rel/np/tendsToAffect/RA_AfyBiaU3qZBxQcbz_CFl_72HYx-OTvpsUlOUL9NSwg> .
-@prefix sub: <https://w3id.org/kpxl/rel/np/tendsToAffect/RA_AfyBiaU3qZBxQcbz_CFl_72HYx-OTvpsUlOUL9NSwg#> .
+@prefix this: <https://w3id.org/kpxl/rel/np/tendsToAffect/RAhSant5QirOtVMO8o-96ul9q-PNlxOKgnqStP23WhFSk> .
+@prefix sub: <https://w3id.org/kpxl/rel/np/tendsToAffect/RAhSant5QirOtVMO8o-96ul9q-PNlxOKgnqStP23WhFSk#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
 @prefix latest: <https://w3id.org/kpxl/rel/latest/tendsToAffect> .
 @prefix rel: <https://w3id.org/kpxl/rel/terms/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -21,6 +22,15 @@ sub:Head {
 }
 
 sub:assertion {
+  rel:ScientificRelationsOntology a owl:Ontology;
+    dct:creator orcid:0000-0002-1267-0234;
+    dct:description "The Scientific Relations Ontology defines some general relations between classes.";
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/>;
+    dct:title "Scientific Relations Ontology";
+    vann:preferredNamespacePrefix "rel";
+    vann:preferredNamespaceUri "https://w3id.org/kpxl/rel/terms/";
+    rdfs:isDefinedBy latest: .
+  
   rel:tendsToAffect a rdf:Property;
     rdfs:domain owl:Class;
     rdfs:isDefinedBy latest:;
@@ -35,9 +45,10 @@ sub:provenance {
 }
 
 sub:pubinfo {
-  this: dct:created "2023-03-27T10:05:20.766+02:00"^^xsd:dateTime;
+  this: dct:created "2023-03-27T10:48:36.783+02:00"^^xsd:dateTime;
     dct:creator orcid:0000-0002-1267-0234;
-    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/>;
+    <http://purl.org/nanopub/x/supersedes> <https://w3id.org/kpxl/rel/np/tendsToAffect/RA_AfyBiaU3qZBxQcbz_CFl_72HYx-OTvpsUlOUL9NSwg> .
 }
 @prefix this: <https://w3id.org/kpxl/rel/np/tendsToBeCausedBy/RA_Ly1uhrEmTGTpMYuwJBuygHvNwSV4QzxwTIEfo99t8g> .
 @prefix sub: <https://w3id.org/kpxl/rel/np/tendsToBeCausedBy/RA_Ly1uhrEmTGTpMYuwJBuygHvNwSV4QzxwTIEfo99t8g#> .
@@ -80,6 +91,7 @@ sub:pubinfo {
     dct:creator orcid:0000-0002-1267-0234;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
+
 @prefix this: <https://w3id.org/kpxl/rel/np/tendsToBeFollowedBy/RAS3v7BOCwItSSaMdtUkynoaCjfptRIhCAz2uqKGrzPxU> .
 @prefix sub: <https://w3id.org/kpxl/rel/np/tendsToBeFollowedBy/RAS3v7BOCwItSSaMdtUkynoaCjfptRIhCAz2uqKGrzPxU#> .
 @prefix latest: <https://w3id.org/kpxl/rel/latest/tendsToBeFollowedBy> .
@@ -121,3 +133,4 @@ sub:pubinfo {
     dct:creator orcid:0000-0002-1267-0234;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
+
