@@ -17,7 +17,13 @@ LASTINDEX=$(
   | sed -r 's/.*<(.*)>.*/\1/'
 )
 
-echo "Supersedes index: $LASTINDEX"
+if [ -z "$LASTINDEX" ]; then
+  echo "No last index found"
+  LASTINDEXARG=""
+else
+  echo "Supersedes index: $LASTINDEX"
+  LASTINDEXARG="-x $LASTINDEX"
+fi
 
 echo "Making index..."
 scripts/np mkindex \
@@ -25,7 +31,7 @@ scripts/np mkindex \
   -c https://orcid.org/0000-0002-1267-0234 \
   -t "Scientific Relations Ontology" \
   -l https://creativecommons.org/publicdomain/zero/1.0/ \
-  -x $LASTINDEX \
+  $LASTINDEXARG \
   -o rel.index.trig \
   rel.trig
 

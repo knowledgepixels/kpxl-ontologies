@@ -1,0 +1,27 @@
+# The content of this file is automatically extracted from rel.trig.
+# Changes should be made in rel.trig.pre.
+
+
+<https://w3id.org/kpxl/rel/terms/tendsToAffect> a <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+  <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Class>;
+  <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/kpxl/rel/latest/tendsToAffect>;
+  <http://www.w3.org/2000/01/rdf-schema#label> "has instances that tend to affect instances of"@en;
+  <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Class>;
+  <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://w3id.org/linkflows/superpattern/terms/affects>;
+  <http://www.w3.org/2004/02/skos/core#definition> "the instances of the subject tend to positively or negatively affect the intensity or frequency of activity instances of the object"@en .
+
+<https://w3id.org/kpxl/rel/terms/tendsToBeCausedBy> a <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+  <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Class>;
+  <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/kpxl/rel/latest/tendsToBeCausedBy>;
+  <http://www.w3.org/2000/01/rdf-schema#label> "has instances that tend to be caused by instances of"@en;
+  <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Class>;
+  <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://w3id.org/linkflows/superpattern/terms/causes>;
+  <http://www.w3.org/2004/02/skos/core#definition> "the instances of the subject tend to cause the existence of instances of the object"@en .
+
+<https://w3id.org/kpxl/rel/terms/tendsToBeFollowedBy> a <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+  <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Class>;
+  <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/kpxl/rel/latest/tendsToBeFollowedBy>;
+  <http://www.w3.org/2000/01/rdf-schema#label> "has instances that tend to be followed by instances of"@en;
+  <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Class>;
+  <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://w3id.org/linkflows/superpattern/terms/isFollowedBy>;
+  <http://www.w3.org/2004/02/skos/core#definition> "the instances of the subject tend to come into existence before instances of the object"@en .

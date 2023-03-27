@@ -16,6 +16,8 @@ if [ ! -f $1.index.trig ]; then
   echo "File $1.index.trig does not exist"; exit 1
 fi
 
+mkdir -p releases
+
 LASTRELEASE=$(scripts/get-last-release-nr.sh $1)
 
 if [ -z $LASTRELEASE ]; then

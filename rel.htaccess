@@ -1,0 +1,8 @@
+RewriteRule ^rel/terms/(.+)$ https://w3id.org/kpxl/rel/latest/$1 [R=302,L]
+RewriteRule ^rel/np/.+/(RA[A-Za-z0-9_\-]{43})$ http://purl.org/np/$1 [R=302,L]
+
+RewriteRule ^rel/latest/tendsToAffect$ http://purl.org/np/RA_AfyBiaU3qZBxQcbz_CFl_72HYx-OTvpsUlOUL9NSwg [R=302,L]
+RewriteRule ^rel/latest/tendsToBeCausedBy$ http://purl.org/np/RA_Ly1uhrEmTGTpMYuwJBuygHvNwSV4QzxwTIEfo99t8g [R=302,L]
+RewriteRule ^rel/latest/tendsToBeFollowedBy$ http://purl.org/np/RAS3v7BOCwItSSaMdtUkynoaCjfptRIhCAz2uqKGrzPxU [R=302,L]
+
+RewriteRule ^rel/latest/index$ http://purl.org/np/RAyRKWqEK_XSVJ_IrQVSU4PukxiqET5cV2lD9Cxf2t0Go [R=302,L]

@@ -40,7 +40,7 @@
 }
 
 :pubinfo {
-  : dct:created "2023-03-27T00:00:00.000+00:00"^^xsd:dateTime ;
+  : dct:created "2023-03-27T10:05:20.766+02:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
@@ -84,7 +84,7 @@
 }
 
 :pubinfo {
-  : dct:created "2023-03-27T00:00:00.000+00:00"^^xsd:dateTime ;
+  : dct:created "2023-03-27T10:05:20.766+02:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
@@ -127,7 +127,7 @@
 }
 
 :pubinfo {
-  : dct:created "2023-03-27T00:00:00.000+00:00"^^xsd:dateTime ;
+  : dct:created "2023-03-27T10:05:20.766+02:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
