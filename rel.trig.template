@@ -23,7 +23,7 @@
 
 :assertion {
   rel:XXXtermXXX rdfs:label "XXXlabelXXX"@en ;
-    a rdf:Property ;
+    a owl:ObjectProperty ;
     rdfs:domain owl:Class ;
     rdfs:range owl:Class ;
     skos:definition "XXXdescXXX"@en ;

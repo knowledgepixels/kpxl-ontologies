@@ -48,7 +48,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/kpxl/rel/terms/tendsToAffect",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -71,7 +71,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/kpxl/rel/terms/tendsToBeCausedBy",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -94,7 +94,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/kpxl/rel/terms/tendsToBeFollowedBy",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],

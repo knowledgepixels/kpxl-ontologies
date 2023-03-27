@@ -1,8 +1,8 @@
 RewriteRule ^rel/terms/(.+)$ https://w3id.org/kpxl/rel/latest/$1 [R=302,L]
 RewriteRule ^rel/np/.+/(RA[A-Za-z0-9_\-]{43})$ http://purl.org/np/$1 [R=302,L]
 
-RewriteRule ^rel/latest/tendsToAffect$ http://purl.org/np/RAhSant5QirOtVMO8o-96ul9q-PNlxOKgnqStP23WhFSk [R=302,L]
-RewriteRule ^rel/latest/tendsToBeCausedBy$ http://purl.org/np/RA_Ly1uhrEmTGTpMYuwJBuygHvNwSV4QzxwTIEfo99t8g [R=302,L]
-RewriteRule ^rel/latest/tendsToBeFollowedBy$ http://purl.org/np/RAS3v7BOCwItSSaMdtUkynoaCjfptRIhCAz2uqKGrzPxU [R=302,L]
+RewriteRule ^rel/latest/tendsToAffect$ http://purl.org/np/RAVWkTOLE4wYyxl36sxA4eROCly_uf6HeifB1epLiu9vM [R=302,L]
+RewriteRule ^rel/latest/tendsToBeCausedBy$ http://purl.org/np/RAZcAKHUEgbDXcplvTPk9qjYVthVrnI2DRv_BBqbQS40E [R=302,L]
+RewriteRule ^rel/latest/tendsToBeFollowedBy$ http://purl.org/np/RA5wUOkrNke6nycovBsgbp7bKqJoO8bc4MIo9eXwNiIa0 [R=302,L]
 
-RewriteRule ^rel/latest/index$ http://purl.org/np/RAvLHmAGZJevAJ5NvCrPnufL-FC6tTA4yk1oT3PfC-9A8 [R=302,L]
+RewriteRule ^rel/latest/index$ http://purl.org/np/RAN1UkOt5hmxogMVYbtBd_EVr_1BvcsirTPi4VwAvHzzg [R=302,L]

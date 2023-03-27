@@ -1,9 +1,8 @@
-@prefix this: <https://w3id.org/kpxl/rel/np/tendsToAffect/RAhSant5QirOtVMO8o-96ul9q-PNlxOKgnqStP23WhFSk> .
-@prefix sub: <https://w3id.org/kpxl/rel/np/tendsToAffect/RAhSant5QirOtVMO8o-96ul9q-PNlxOKgnqStP23WhFSk#> .
+@prefix this: <https://w3id.org/kpxl/rel/np/tendsToAffect/RAVWkTOLE4wYyxl36sxA4eROCly_uf6HeifB1epLiu9vM> .
+@prefix sub: <https://w3id.org/kpxl/rel/np/tendsToAffect/RAVWkTOLE4wYyxl36sxA4eROCly_uf6HeifB1epLiu9vM#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix latest: <https://w3id.org/kpxl/rel/latest/tendsToAffect> .
 @prefix rel: <https://w3id.org/kpxl/rel/terms/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -31,7 +30,7 @@ sub:assertion {
     vann:preferredNamespaceUri "https://w3id.org/kpxl/rel/terms/";
     rdfs:isDefinedBy latest: .
   
-  rel:tendsToAffect a rdf:Property;
+  rel:tendsToAffect a owl:ObjectProperty;
     rdfs:domain owl:Class;
     rdfs:isDefinedBy latest:;
     rdfs:label "has instances that tend to affect instances of"@en;
@@ -45,16 +44,15 @@ sub:provenance {
 }
 
 sub:pubinfo {
-  this: dct:created "2023-03-27T10:48:36.783+02:00"^^xsd:dateTime;
+  this: dct:created "2023-03-27T11:21:43.468+02:00"^^xsd:dateTime;
     dct:creator orcid:0000-0002-1267-0234;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/>;
-    <http://purl.org/nanopub/x/supersedes> <https://w3id.org/kpxl/rel/np/tendsToAffect/RA_AfyBiaU3qZBxQcbz_CFl_72HYx-OTvpsUlOUL9NSwg> .
+    <http://purl.org/nanopub/x/supersedes> <https://w3id.org/kpxl/rel/np/tendsToAffect/RAhSant5QirOtVMO8o-96ul9q-PNlxOKgnqStP23WhFSk> .
 }
-@prefix this: <https://w3id.org/kpxl/rel/np/tendsToBeCausedBy/RA_Ly1uhrEmTGTpMYuwJBuygHvNwSV4QzxwTIEfo99t8g> .
-@prefix sub: <https://w3id.org/kpxl/rel/np/tendsToBeCausedBy/RA_Ly1uhrEmTGTpMYuwJBuygHvNwSV4QzxwTIEfo99t8g#> .
+@prefix this: <https://w3id.org/kpxl/rel/np/tendsToBeCausedBy/RAZcAKHUEgbDXcplvTPk9qjYVthVrnI2DRv_BBqbQS40E> .
+@prefix sub: <https://w3id.org/kpxl/rel/np/tendsToBeCausedBy/RAZcAKHUEgbDXcplvTPk9qjYVthVrnI2DRv_BBqbQS40E#> .
 @prefix latest: <https://w3id.org/kpxl/rel/latest/tendsToBeCausedBy> .
 @prefix rel: <https://w3id.org/kpxl/rel/terms/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -73,7 +71,7 @@ sub:Head {
 }
 
 sub:assertion {
-  rel:tendsToBeCausedBy a rdf:Property;
+  rel:tendsToBeCausedBy a owl:ObjectProperty;
     rdfs:domain owl:Class;
     rdfs:isDefinedBy latest:;
     rdfs:label "has instances that tend to be caused by instances of"@en;
@@ -87,16 +85,15 @@ sub:provenance {
 }
 
 sub:pubinfo {
-  this: dct:created "2023-03-27T10:05:20.766+02:00"^^xsd:dateTime;
+  this: dct:created "2023-03-27T11:21:43.468+02:00"^^xsd:dateTime;
     dct:creator orcid:0000-0002-1267-0234;
-    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/>;
+    <http://purl.org/nanopub/x/supersedes> <https://w3id.org/kpxl/rel/np/tendsToBeCausedBy/RA_Ly1uhrEmTGTpMYuwJBuygHvNwSV4QzxwTIEfo99t8g> .
 }
-
-@prefix this: <https://w3id.org/kpxl/rel/np/tendsToBeFollowedBy/RAS3v7BOCwItSSaMdtUkynoaCjfptRIhCAz2uqKGrzPxU> .
-@prefix sub: <https://w3id.org/kpxl/rel/np/tendsToBeFollowedBy/RAS3v7BOCwItSSaMdtUkynoaCjfptRIhCAz2uqKGrzPxU#> .
+@prefix this: <https://w3id.org/kpxl/rel/np/tendsToBeFollowedBy/RA5wUOkrNke6nycovBsgbp7bKqJoO8bc4MIo9eXwNiIa0> .
+@prefix sub: <https://w3id.org/kpxl/rel/np/tendsToBeFollowedBy/RA5wUOkrNke6nycovBsgbp7bKqJoO8bc4MIo9eXwNiIa0#> .
 @prefix latest: <https://w3id.org/kpxl/rel/latest/tendsToBeFollowedBy> .
 @prefix rel: <https://w3id.org/kpxl/rel/terms/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -115,7 +112,7 @@ sub:Head {
 }
 
 sub:assertion {
-  rel:tendsToBeFollowedBy a rdf:Property;
+  rel:tendsToBeFollowedBy a owl:ObjectProperty;
     rdfs:domain owl:Class;
     rdfs:isDefinedBy latest:;
     rdfs:label "has instances that tend to be followed by instances of"@en;
@@ -129,8 +126,8 @@ sub:provenance {
 }
 
 sub:pubinfo {
-  this: dct:created "2023-03-27T10:05:20.766+02:00"^^xsd:dateTime;
+  this: dct:created "2023-03-27T11:21:43.468+02:00"^^xsd:dateTime;
     dct:creator orcid:0000-0002-1267-0234;
-    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/>;
+    <http://purl.org/nanopub/x/supersedes> <https://w3id.org/kpxl/rel/np/tendsToBeFollowedBy/RAS3v7BOCwItSSaMdtUkynoaCjfptRIhCAz2uqKGrzPxU> .
 }
-

@@ -44,7 +44,7 @@
 }
 
 :pubinfo {
-  : dct:created "2023-03-27T10:48:36.783+02:00"^^xsd:dateTime ;
+  : dct:created "2023-03-27T11:21:43.468+02:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
@@ -77,7 +77,7 @@
 
 :assertion {
   rel:tendsToAffect rdfs:label "has instances that tend to affect instances of"@en ;
-    a rdf:Property ;
+    a owl:ObjectProperty ;
     rdfs:domain owl:Class ;
     rdfs:range owl:Class ;
     skos:definition "the instances of the subject tend to positively or negatively affect the intensity or frequency of activity instances of the object"@en ;
@@ -90,7 +90,7 @@
 }
 
 :pubinfo {
-  : dct:created "2023-03-27T10:48:36.783+02:00"^^xsd:dateTime ;
+  : dct:created "2023-03-27T11:21:43.468+02:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
@@ -121,7 +121,7 @@
 
 :assertion {
   rel:tendsToBeCausedBy rdfs:label "has instances that tend to be caused by instances of"@en ;
-    a rdf:Property ;
+    a owl:ObjectProperty ;
     rdfs:domain owl:Class ;
     rdfs:range owl:Class ;
     skos:definition "the instances of the subject tend to cause the existence of instances of the object"@en ;
@@ -134,7 +134,7 @@
 }
 
 :pubinfo {
-  : dct:created "2023-03-27T10:48:36.783+02:00"^^xsd:dateTime ;
+  : dct:created "2023-03-27T11:21:43.468+02:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
@@ -164,7 +164,7 @@
 
 :assertion {
   rel:tendsToBeFollowedBy rdfs:label "has instances that tend to be followed by instances of"@en ;
-    a rdf:Property ;
+    a owl:ObjectProperty ;
     rdfs:domain owl:Class ;
     rdfs:range owl:Class ;
     skos:definition "the instances of the subject tend to come into existence before instances of the object"@en ;
@@ -177,7 +177,7 @@
 }
 
 :pubinfo {
-  : dct:created "2023-03-27T10:48:36.783+02:00"^^xsd:dateTime ;
+  : dct:created "2023-03-27T11:21:43.468+02:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
