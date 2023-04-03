@@ -38,6 +38,10 @@ rm $1.ttl.pre
 
 java -jar $WIDOCOJAR -rewriteAll -uniteSections -ontFile $1.ttl -outFolder doc/$1
 
+# The latest version of Widoco puts all files into a subfolder 'doc', which we don't want here:
+cp -r doc/$1/doc/* doc/$1/
+rm -r doc/$1/doc
+
 if [ -d doc-x/$1 ]; then
   cp -r doc-x/$1 doc/
 fi

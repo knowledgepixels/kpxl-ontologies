@@ -44,7 +44,7 @@
 }
 
 :pubinfo {
-  : dct:created "2023-03-27T11:21:43.468+02:00"^^xsd:dateTime ;
+  : dct:created "2023-04-03T11:06:59.159+02:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
@@ -90,7 +90,7 @@
 }
 
 :pubinfo {
-  : dct:created "2023-03-27T11:21:43.468+02:00"^^xsd:dateTime ;
+  : dct:created "2023-04-03T11:06:59.159+02:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
@@ -134,7 +134,7 @@
 }
 
 :pubinfo {
-  : dct:created "2023-03-27T11:21:43.468+02:00"^^xsd:dateTime ;
+  : dct:created "2023-04-03T11:06:59.159+02:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
@@ -177,7 +177,781 @@
 }
 
 :pubinfo {
-  : dct:created "2023-03-27T11:21:43.468+02:00"^^xsd:dateTime ;
+  : dct:created "2023-04-03T11:06:59.159+02:00"^^xsd:dateTime ;
+    dct:creator orcid:0000-0002-1267-0234 ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+@prefix : <https://w3id.org/kpxl/rel/np/tendsToBeIncludedIn/> .
+@prefix latest: <https://w3id.org/kpxl/rel/latest/tendsToBeIncludedIn> .
+@prefix rel: <https://w3id.org/kpxl/rel/terms/> .
+@prefix kpxl: <https://w3id.org/kpxl/principles/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
+
+:Head {
+  : a np:Nanopublication;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  rel:tendsToBeIncludedIn rdfs:label "has instances that tend to be included in instances of"@en ;
+    a owl:ObjectProperty ;
+    rdfs:domain owl:Class ;
+    rdfs:range owl:Class ;
+    skos:definition "the instances of the subject tend to be spatiotemporally included in instances of the object"@en ;
+    rdfs:seeAlso sp:isIncludedIn ;
+    rdfs:isDefinedBy latest: .
+}
+
+:provenance {
+  :assertion prov:wasAttributedTo orcid:0000-0002-1267-0234 .
+}
+
+:pubinfo {
+  : dct:created "2023-04-03T11:06:59.159+02:00"^^xsd:dateTime ;
+    dct:creator orcid:0000-0002-1267-0234 ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+@prefix : <https://w3id.org/kpxl/rel/np/tendsToBeNecessaryAndSufficientFor/> .
+@prefix latest: <https://w3id.org/kpxl/rel/latest/tendsToBeNecessaryAndSufficientFor> .
+@prefix rel: <https://w3id.org/kpxl/rel/terms/> .
+@prefix kpxl: <https://w3id.org/kpxl/principles/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
+
+:Head {
+  : a np:Nanopublication;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  rel:tendsToBeNecessaryAndSufficientFor rdfs:label "has instances that tend to be necessary and sufficient for instances of"@en ;
+    a owl:ObjectProperty ;
+    rdfs:domain owl:Class ;
+    rdfs:range owl:Class ;
+    skos:definition "the instances of the subject tend to cause the existence of instances of the object, which would not exist if the subject instances did not exist"@en ;
+    rdfs:seeAlso sp:isNecessaryAndSufficientFor ;
+    rdfs:isDefinedBy latest: .
+}
+
+:provenance {
+  :assertion prov:wasAttributedTo orcid:0000-0002-1267-0234 .
+}
+
+:pubinfo {
+  : dct:created "2023-04-03T11:06:59.159+02:00"^^xsd:dateTime ;
+    dct:creator orcid:0000-0002-1267-0234 ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+@prefix : <https://w3id.org/kpxl/rel/np/tendsToCause/> .
+@prefix latest: <https://w3id.org/kpxl/rel/latest/tendsToCause> .
+@prefix rel: <https://w3id.org/kpxl/rel/terms/> .
+@prefix kpxl: <https://w3id.org/kpxl/principles/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
+
+:Head {
+  : a np:Nanopublication;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  rel:tendsToCause rdfs:label "has instances that tend to cause instances of"@en ;
+    a owl:ObjectProperty ;
+    rdfs:domain owl:Class ;
+    rdfs:range owl:Class ;
+    skos:definition "the instances of the subject tend to cause the existence of instances of the object"@en ;
+    rdfs:seeAlso sp:causes ;
+    rdfs:isDefinedBy latest: .
+}
+
+:provenance {
+  :assertion prov:wasAttributedTo orcid:0000-0002-1267-0234 .
+}
+
+:pubinfo {
+  : dct:created "2023-04-03T11:06:59.159+02:00"^^xsd:dateTime ;
+    dct:creator orcid:0000-0002-1267-0234 ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+@prefix : <https://w3id.org/kpxl/rel/np/tendsToContributeTo/> .
+@prefix latest: <https://w3id.org/kpxl/rel/latest/tendsToContributeTo> .
+@prefix rel: <https://w3id.org/kpxl/rel/terms/> .
+@prefix kpxl: <https://w3id.org/kpxl/principles/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
+
+:Head {
+  : a np:Nanopublication;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  rel:tendsToContributeTo rdfs:label "has instances that tend to contribute to instances of"@en ;
+    a owl:ObjectProperty ;
+    rdfs:domain owl:Class ;
+    rdfs:range owl:Class ;
+    skos:definition "the instances of the subject tend to positively affect the intensity or frequency of activity instances of the object"@en ;
+    rdfs:seeAlso sp:contributesTo ;
+    rdfs:isDefinedBy latest: .
+}
+
+:provenance {
+  :assertion prov:wasAttributedTo orcid:0000-0002-1267-0234 .
+}
+
+:pubinfo {
+  : dct:created "2023-04-03T11:06:59.159+02:00"^^xsd:dateTime ;
+    dct:creator orcid:0000-0002-1267-0234 ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+@prefix : <https://w3id.org/kpxl/rel/np/tendsToCooccurWith/> .
+@prefix latest: <https://w3id.org/kpxl/rel/latest/tendsToCooccurWith> .
+@prefix rel: <https://w3id.org/kpxl/rel/terms/> .
+@prefix kpxl: <https://w3id.org/kpxl/principles/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
+
+:Head {
+  : a np:Nanopublication;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  rel:tendsToCooccurWith rdfs:label "has instances that tend to co-occur with instances of"@en ;
+    a owl:ObjectProperty ;
+    rdfs:domain owl:Class ;
+    rdfs:range owl:Class ;
+    skos:definition "the instances of the subject tend to be close to instances of the object in terms of space and time"@en ;
+    rdfs:seeAlso sp:coOccursWith ;
+    rdfs:isDefinedBy latest: .
+}
+
+:provenance {
+  :assertion prov:wasAttributedTo orcid:0000-0002-1267-0234 .
+}
+
+:pubinfo {
+  : dct:created "2023-04-03T11:06:59.159+02:00"^^xsd:dateTime ;
+    dct:creator orcid:0000-0002-1267-0234 ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+@prefix : <https://w3id.org/kpxl/rel/np/tendsToDecrease/> .
+@prefix latest: <https://w3id.org/kpxl/rel/latest/tendsToDecrease> .
+@prefix rel: <https://w3id.org/kpxl/rel/terms/> .
+@prefix kpxl: <https://w3id.org/kpxl/principles/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
+
+:Head {
+  : a np:Nanopublication;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  rel:tendsToDecrease rdfs:label "has instances that tend to decrease instances of"@en ;
+    a owl:ObjectProperty ;
+    rdfs:domain owl:Class ;
+    rdfs:range owl:Class ;
+    skos:definition "the instances of the subject tend to cause the value of instances of the object to decrease"@en ;
+    rdfs:seeAlso sp:decreases ;
+    rdfs:isDefinedBy latest: .
+}
+
+:provenance {
+  :assertion prov:wasAttributedTo orcid:0000-0002-1267-0234 .
+}
+
+:pubinfo {
+  : dct:created "2023-04-03T11:06:59.159+02:00"^^xsd:dateTime ;
+    dct:creator orcid:0000-0002-1267-0234 ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+@prefix : <https://w3id.org/kpxl/rel/np/tendsToEnable/> .
+@prefix latest: <https://w3id.org/kpxl/rel/latest/tendsToEnable> .
+@prefix rel: <https://w3id.org/kpxl/rel/terms/> .
+@prefix kpxl: <https://w3id.org/kpxl/principles/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
+
+:Head {
+  : a np:Nanopublication;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  rel:tendsToEnable rdfs:label "has instances that tend to enable instances of"@en ;
+    a owl:ObjectProperty ;
+    rdfs:domain owl:Class ;
+    rdfs:range owl:Class ;
+    skos:definition "the instances of the subject tend to cause activity instances of the object to happen"@en ;
+    rdfs:seeAlso sp:enables ;
+    rdfs:isDefinedBy latest: .
+}
+
+:provenance {
+  :assertion prov:wasAttributedTo orcid:0000-0002-1267-0234 .
+}
+
+:pubinfo {
+  : dct:created "2023-04-03T11:06:59.159+02:00"^^xsd:dateTime ;
+    dct:creator orcid:0000-0002-1267-0234 ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+@prefix : <https://w3id.org/kpxl/rel/np/tendsToFollow/> .
+@prefix latest: <https://w3id.org/kpxl/rel/latest/tendsToFollow> .
+@prefix rel: <https://w3id.org/kpxl/rel/terms/> .
+@prefix kpxl: <https://w3id.org/kpxl/principles/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
+
+:Head {
+  : a np:Nanopublication;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  rel:tendsToFollow rdfs:label "has instances that tend to follow instances of"@en ;
+    a owl:ObjectProperty ;
+    rdfs:domain owl:Class ;
+    rdfs:range owl:Class ;
+    skos:definition "the instances of the subject tend to come into existence after instances of the object"@en ;
+    rdfs:seeAlso sp:follows ;
+    rdfs:isDefinedBy latest: .
+}
+
+:provenance {
+  :assertion prov:wasAttributedTo orcid:0000-0002-1267-0234 .
+}
+
+:pubinfo {
+  : dct:created "2023-04-03T11:06:59.159+02:00"^^xsd:dateTime ;
+    dct:creator orcid:0000-0002-1267-0234 ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+@prefix : <https://w3id.org/kpxl/rel/np/tendsToHaveDifferentValueFrom/> .
+@prefix latest: <https://w3id.org/kpxl/rel/latest/tendsToHaveDifferentValueFrom> .
+@prefix rel: <https://w3id.org/kpxl/rel/terms/> .
+@prefix kpxl: <https://w3id.org/kpxl/principles/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
+
+:Head {
+  : a np:Nanopublication;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  rel:tendsToHaveDifferentValueFrom rdfs:label "has instances that tend to have a different value from instances of"@en ;
+    a owl:ObjectProperty ;
+    rdfs:domain owl:Class ;
+    rdfs:range owl:Class ;
+    skos:definition "the quantifiable instances of the subject tend to have a value that is different from quantifiable instances of the object"@en ;
+    rdfs:seeAlso sp:hasDifferentValueFrom ;
+    rdfs:isDefinedBy latest: .
+}
+
+:provenance {
+  :assertion prov:wasAttributedTo orcid:0000-0002-1267-0234 .
+}
+
+:pubinfo {
+  : dct:created "2023-04-03T11:06:59.159+02:00"^^xsd:dateTime ;
+    dct:creator orcid:0000-0002-1267-0234 ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+@prefix : <https://w3id.org/kpxl/rel/np/tendsToHaveLargerValueThan/> .
+@prefix latest: <https://w3id.org/kpxl/rel/latest/tendsToHaveLargerValueThan> .
+@prefix rel: <https://w3id.org/kpxl/rel/terms/> .
+@prefix kpxl: <https://w3id.org/kpxl/principles/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
+
+:Head {
+  : a np:Nanopublication;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  rel:tendsToHaveLargerValueThan rdfs:label "has instances that tend to have a larger value than instances of"@en ;
+    a owl:ObjectProperty ;
+    rdfs:domain owl:Class ;
+    rdfs:range owl:Class ;
+    skos:definition "the quantifiable instances of the subject tend to have a larger value than quantifiable instances of the object"@en ;
+    rdfs:seeAlso sp:hasLargerValueThan ;
+    rdfs:isDefinedBy latest: .
+}
+
+:provenance {
+  :assertion prov:wasAttributedTo orcid:0000-0002-1267-0234 .
+}
+
+:pubinfo {
+  : dct:created "2023-04-03T11:06:59.159+02:00"^^xsd:dateTime ;
+    dct:creator orcid:0000-0002-1267-0234 ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+@prefix : <https://w3id.org/kpxl/rel/np/tendsToHaveSameValueAs/> .
+@prefix latest: <https://w3id.org/kpxl/rel/latest/tendsToHaveSameValueAs> .
+@prefix rel: <https://w3id.org/kpxl/rel/terms/> .
+@prefix kpxl: <https://w3id.org/kpxl/principles/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
+
+:Head {
+  : a np:Nanopublication;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  rel:tendsToHaveSameValueAs rdfs:label "has instances that tend to have the same value as instances of"@en ;
+    a owl:ObjectProperty ;
+    rdfs:domain owl:Class ;
+    rdfs:range owl:Class ;
+    skos:definition "the quantifiable instances of the subject tend to have the same value as quantifiable instances of the object"@en ;
+    rdfs:seeAlso sp:hasSameValueAs ;
+    rdfs:isDefinedBy latest: .
+}
+
+:provenance {
+  :assertion prov:wasAttributedTo orcid:0000-0002-1267-0234 .
+}
+
+:pubinfo {
+  : dct:created "2023-04-03T11:06:59.159+02:00"^^xsd:dateTime ;
+    dct:creator orcid:0000-0002-1267-0234 ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+@prefix : <https://w3id.org/kpxl/rel/np/tendsToHaveSimilarValueAs/> .
+@prefix latest: <https://w3id.org/kpxl/rel/latest/tendsToHaveSimilarValueAs> .
+@prefix rel: <https://w3id.org/kpxl/rel/terms/> .
+@prefix kpxl: <https://w3id.org/kpxl/principles/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
+
+:Head {
+  : a np:Nanopublication;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  rel:tendsToHaveSimilarValueAs rdfs:label "has instances that tend to have a similar value as instances of"@en ;
+    a owl:ObjectProperty ;
+    rdfs:domain owl:Class ;
+    rdfs:range owl:Class ;
+    skos:definition "the quantifiable instances of the subject tend to have a similar value as quantifiable instances of the object"@en ;
+    rdfs:seeAlso sp:hasSimilarValueAs ;
+    rdfs:isDefinedBy latest: .
+}
+
+:provenance {
+  :assertion prov:wasAttributedTo orcid:0000-0002-1267-0234 .
+}
+
+:pubinfo {
+  : dct:created "2023-04-03T11:06:59.159+02:00"^^xsd:dateTime ;
+    dct:creator orcid:0000-0002-1267-0234 ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+@prefix : <https://w3id.org/kpxl/rel/np/tendsToHaveSmallerValueThan/> .
+@prefix latest: <https://w3id.org/kpxl/rel/latest/tendsToHaveSmallerValueThan> .
+@prefix rel: <https://w3id.org/kpxl/rel/terms/> .
+@prefix kpxl: <https://w3id.org/kpxl/principles/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
+
+:Head {
+  : a np:Nanopublication;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  rel:tendsToHaveSmallerValueThan rdfs:label "has instances that tend to have a smaller value than instances of"@en ;
+    a owl:ObjectProperty ;
+    rdfs:domain owl:Class ;
+    rdfs:range owl:Class ;
+    skos:definition "the quantifiable instances of the subject tend to have a smaller value than quantifiable instances of the object"@en ;
+    rdfs:seeAlso sp:hasSmallerValueThan ;
+    rdfs:isDefinedBy latest: .
+}
+
+:provenance {
+  :assertion prov:wasAttributedTo orcid:0000-0002-1267-0234 .
+}
+
+:pubinfo {
+  : dct:created "2023-04-03T11:06:59.159+02:00"^^xsd:dateTime ;
+    dct:creator orcid:0000-0002-1267-0234 ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+@prefix : <https://w3id.org/kpxl/rel/np/tendsToInclude/> .
+@prefix latest: <https://w3id.org/kpxl/rel/latest/tendsToInclude> .
+@prefix rel: <https://w3id.org/kpxl/rel/terms/> .
+@prefix kpxl: <https://w3id.org/kpxl/principles/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
+
+:Head {
+  : a np:Nanopublication;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  rel:tendsToInclude rdfs:label "has instances that tend to include instances of"@en ;
+    a owl:ObjectProperty ;
+    rdfs:domain owl:Class ;
+    rdfs:range owl:Class ;
+    skos:definition "the instances of the subject tend to spatiotemporally include instances of the object"@en ;
+    rdfs:seeAlso sp:includes ;
+    rdfs:isDefinedBy latest: .
+}
+
+:provenance {
+  :assertion prov:wasAttributedTo orcid:0000-0002-1267-0234 .
+}
+
+:pubinfo {
+  : dct:created "2023-04-03T11:06:59.159+02:00"^^xsd:dateTime ;
+    dct:creator orcid:0000-0002-1267-0234 ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+@prefix : <https://w3id.org/kpxl/rel/np/tendsToIncrease/> .
+@prefix latest: <https://w3id.org/kpxl/rel/latest/tendsToIncrease> .
+@prefix rel: <https://w3id.org/kpxl/rel/terms/> .
+@prefix kpxl: <https://w3id.org/kpxl/principles/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
+
+:Head {
+  : a np:Nanopublication;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  rel:tendsToIncrease rdfs:label "has instances that tend to increase instances of"@en ;
+    a owl:ObjectProperty ;
+    rdfs:domain owl:Class ;
+    rdfs:range owl:Class ;
+    skos:definition "the instances of the subject tend to cause the value of instances of the object to increase"@en ;
+    rdfs:seeAlso sp:increases ;
+    rdfs:isDefinedBy latest: .
+}
+
+:provenance {
+  :assertion prov:wasAttributedTo orcid:0000-0002-1267-0234 .
+}
+
+:pubinfo {
+  : dct:created "2023-04-03T11:06:59.159+02:00"^^xsd:dateTime ;
+    dct:creator orcid:0000-0002-1267-0234 ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+@prefix : <https://w3id.org/kpxl/rel/np/tendsToInhibit/> .
+@prefix latest: <https://w3id.org/kpxl/rel/latest/tendsToInhibit> .
+@prefix rel: <https://w3id.org/kpxl/rel/terms/> .
+@prefix kpxl: <https://w3id.org/kpxl/principles/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
+
+:Head {
+  : a np:Nanopublication;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  rel:tendsToInhibit rdfs:label "has instances that tend to inhibit instances of"@en ;
+    a owl:ObjectProperty ;
+    rdfs:domain owl:Class ;
+    rdfs:range owl:Class ;
+    skos:definition "the instances of the subject tend to negatively affect the intensity or frequency of the activity instances of the object"@en ;
+    rdfs:seeAlso sp:inhibits ;
+    rdfs:isDefinedBy latest: .
+}
+
+:provenance {
+  :assertion prov:wasAttributedTo orcid:0000-0002-1267-0234 .
+}
+
+:pubinfo {
+  : dct:created "2023-04-03T11:06:59.159+02:00"^^xsd:dateTime ;
+    dct:creator orcid:0000-0002-1267-0234 ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+@prefix : <https://w3id.org/kpxl/rel/np/tendsToPrevent/> .
+@prefix latest: <https://w3id.org/kpxl/rel/latest/tendsToPrevent> .
+@prefix rel: <https://w3id.org/kpxl/rel/terms/> .
+@prefix kpxl: <https://w3id.org/kpxl/principles/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
+
+:Head {
+  : a np:Nanopublication;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  rel:tendsToPrevent rdfs:label "has instances that tend to prevent instances of"@en ;
+    a owl:ObjectProperty ;
+    rdfs:domain owl:Class ;
+    rdfs:range owl:Class ;
+    skos:definition "the instances of the subject tend to cause the activity instances of the object not to happen"@en ;
+    rdfs:seeAlso sp:prevents ;
+    rdfs:isDefinedBy latest: .
+}
+
+:provenance {
+  :assertion prov:wasAttributedTo orcid:0000-0002-1267-0234 .
+}
+
+:pubinfo {
+  : dct:created "2023-04-03T11:06:59.159+02:00"^^xsd:dateTime ;
+    dct:creator orcid:0000-0002-1267-0234 ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+@prefix : <https://w3id.org/kpxl/rel/np/tendsToRequire/> .
+@prefix latest: <https://w3id.org/kpxl/rel/latest/tendsToRequire> .
+@prefix rel: <https://w3id.org/kpxl/rel/terms/> .
+@prefix kpxl: <https://w3id.org/kpxl/principles/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
+
+:Head {
+  : a np:Nanopublication;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  rel:tendsToRequire rdfs:label "has instances that tend to require instances of"@en ;
+    a owl:ObjectProperty ;
+    rdfs:domain owl:Class ;
+    rdfs:range owl:Class ;
+    skos:definition "the instances of the subject tend not to have existed if instances of the object did not exist"@en ;
+    rdfs:seeAlso sp:requires ;
+    rdfs:isDefinedBy latest: .
+}
+
+:provenance {
+  :assertion prov:wasAttributedTo orcid:0000-0002-1267-0234 .
+}
+
+:pubinfo {
+  : dct:created "2023-04-03T11:06:59.159+02:00"^^xsd:dateTime ;
     dct:creator orcid:0000-0002-1267-0234 ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }

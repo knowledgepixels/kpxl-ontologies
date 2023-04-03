@@ -6,7 +6,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"http://schema.org","@type":"TechArticle","url":"https://w3id.org/kpxl/rel/terms/ScientificRelationsOntology","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/kpxl/rel/terms/ScientificRelationsOntology","name":"Scientific Relations Ontology", "headline":"The Scientific Relations Ontology defines some general relations between classes.", "datePublished":"Mon Mar 27 11:21:28 CEST 2023", "license":"https://creativecommons.org/publicdomain/zero/1.0/", "author":[{"@type":"Person","name":"https://orcid.org/0000-0002-1267-0234","url":"https://orcid.org/0000-0002-1267-0234"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://w3id.org/kpxl/rel/terms/","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/kpxl/rel/terms/","name":"Scientific Relations Ontology", "headline":"The Scientific Relations Ontology defines some general relations between classes.", "datePublished":"Mon Apr 03 11:07:08 CEST 2023", "license":"https://creativecommons.org/publicdomain/zero/1.0/", "author":[{"@type":"Person","name":"https://orcid.org/0000-0002-1267-0234","url":"https://orcid.org/0000-0002-1267-0234"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -42,7 +42,9 @@ function loadTOC(){
 	  t+='</ul>';
 	  $("#toc").html(t); 
 }
- $.fn.ignore = function(sel){
+$(function(){
+    loadHash();
+}); $.fn.ignore = function(sel){
         return this.clone().find(sel||">*").remove().end();
  }; 
    </script> 
@@ -59,8 +61,8 @@ function loadTOC(){
 <dt>Authors:</dt>
 <dd><a href="https://orcid.org/0000-0002-1267-0234"> Tobias Kuhn</a></dd>
 
-<dt>Download serialization:</dt><dd><span><a href="ontology.json" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.xml" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License: </dt><dd><a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank"><img src="https://img.shields.io/badge/License-https://creativecommons.org/publicdomain/zero/1.0/-blue.svg" alt="https://creativecommons.org/publicdomain/zero/1.0/" /></a>
-</dd><dt>Cite as:</dt>
+<dt>Download serialization:</dt><dd><span><a href="ontology.jsonld" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.rdf" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License:</dt><dd><a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank"><img src="https://img.shields.io/badge/License-https://creativecommons.org/publicdomain/zero/1.0/-blue.svg" alt="https://creativecommons.org/publicdomain/zero/1.0/" /></a>
+</dd><!-- <dt>Evaluation:</dt><dd><a href="OOPSEvaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --><dt>Cite as:</dt>
 <dd> Tobias Kuhn. Scientific Relations Ontology.</dd>
 </dl>
 
@@ -84,16 +86,79 @@ This documentation is generated from the nanopublications that you can find <a h
     <div id="overview"><h2 id="overv" class="list">Scientific Relations Ontology: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <span class="markdown">
 This ontology has the following classes and properties.</span>
-<h4>Object Properties</h4><ul class="hlist">
+<h4>Object Properties</h4><ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
    <li>
-      <a href="#https://w3id.org/kpxl/rel/terms/tendsToAffect" title="https://w3id.org/kpxl/rel/terms/tendsToAffect">has instances that tend to affect instances of</a>
+      <a href="#tendsToAffect" title="https://w3id.org/kpxl/rel/terms/tendsToAffect">has instances that tend to affect instances of</a>
    </li>
    <li>
-      <a href="#https://w3id.org/kpxl/rel/terms/tendsToBeCausedBy" title="https://w3id.org/kpxl/rel/terms/tendsToBeCausedBy">has instances that tend to be caused by instances of</a>
+      <a href="#tendsToBeCausedBy" title="https://w3id.org/kpxl/rel/terms/tendsToBeCausedBy">has instances that tend to be caused by instances of</a>
    </li>
    <li>
-      <a href="#https://w3id.org/kpxl/rel/terms/tendsToBeFollowedBy"
+      <a href="#tendsToBeFollowedBy"
          title="https://w3id.org/kpxl/rel/terms/tendsToBeFollowedBy">has instances that tend to be followed by instances of</a>
+   </li>
+   <li>
+      <a href="#tendsToBeIncludedIn"
+         title="https://w3id.org/kpxl/rel/terms/tendsToBeIncludedIn">has instances that tend to be included in instances of</a>
+   </li>
+   <li>
+      <a href="#tendsToBeNecessaryAndSufficientFor"
+         title="https://w3id.org/kpxl/rel/terms/tendsToBeNecessaryAndSufficientFor">has instances that tend to be necessary and sufficient for instances of</a>
+   </li>
+   <li>
+      <a href="#tendsToCause" title="https://w3id.org/kpxl/rel/terms/tendsToCause">has instances that tend to cause instances of</a>
+   </li>
+   <li>
+      <a href="#tendsToCooccurWith"
+         title="https://w3id.org/kpxl/rel/terms/tendsToCooccurWith">has instances that tend to co-occur with instances of</a>
+   </li>
+   <li>
+      <a href="#tendsToContributeTo"
+         title="https://w3id.org/kpxl/rel/terms/tendsToContributeTo">has instances that tend to contribute to instances of</a>
+   </li>
+   <li>
+      <a href="#tendsToDecrease" title="https://w3id.org/kpxl/rel/terms/tendsToDecrease">has instances that tend to decrease instances of</a>
+   </li>
+   <li>
+      <a href="#tendsToEnable" title="https://w3id.org/kpxl/rel/terms/tendsToEnable">has instances that tend to enable instances of</a>
+   </li>
+   <li>
+      <a href="#tendsToFollow" title="https://w3id.org/kpxl/rel/terms/tendsToFollow">has instances that tend to follow instances of</a>
+   </li>
+   <li>
+      <a href="#tendsToHaveDifferentValueFrom"
+         title="https://w3id.org/kpxl/rel/terms/tendsToHaveDifferentValueFrom">has instances that tend to have a different value from instances of</a>
+   </li>
+   <li>
+      <a href="#tendsToHaveLargerValueThan"
+         title="https://w3id.org/kpxl/rel/terms/tendsToHaveLargerValueThan">has instances that tend to have a larger value than instances of</a>
+   </li>
+   <li>
+      <a href="#tendsToHaveSimilarValueAs"
+         title="https://w3id.org/kpxl/rel/terms/tendsToHaveSimilarValueAs">has instances that tend to have a similar value as instances of</a>
+   </li>
+   <li>
+      <a href="#tendsToHaveSmallerValueThan"
+         title="https://w3id.org/kpxl/rel/terms/tendsToHaveSmallerValueThan">has instances that tend to have a smaller value than instances of</a>
+   </li>
+   <li>
+      <a href="#tendsToHaveSameValueAs"
+         title="https://w3id.org/kpxl/rel/terms/tendsToHaveSameValueAs">has instances that tend to have the same value as instances of</a>
+   </li>
+   <li>
+      <a href="#tendsToInclude" title="https://w3id.org/kpxl/rel/terms/tendsToInclude">has instances that tend to include instances of</a>
+   </li>
+   <li>
+      <a href="#tendsToIncrease" title="https://w3id.org/kpxl/rel/terms/tendsToIncrease">has instances that tend to increase instances of</a>
+   </li>
+   <li>
+      <a href="#tendsToInhibit" title="https://w3id.org/kpxl/rel/terms/tendsToInhibit">has instances that tend to inhibit instances of</a>
+   </li>
+   <li>
+      <a href="#tendsToPrevent" title="https://w3id.org/kpxl/rel/terms/tendsToPrevent">has instances that tend to prevent instances of</a>
+   </li>
+   <li>
+      <a href="#tendsToRequire" title="https://w3id.org/kpxl/rel/terms/tendsToRequire">has instances that tend to require instances of</a>
    </li>
 </ul>
 </div>
@@ -106,23 +171,86 @@ This ontology has the following classes and properties.</span>
 
 
 <!--CROSSREF SECTION-->
-   <div id="crossref"><h2 id="crossreference" class="list">Cross reference for Scientific Relations Ontology classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+   <div id="crossref"><h2 id="crossreference" class="list">Cross-reference for Scientific Relations Ontology classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 This section provides details for each class and property defined by Scientific Relations Ontology.
-<div id="objectproperties">
+<div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
    <h3 id="properties" class="list">Object Properties</h3>
    <ul class="hlist">
       <li>
-         <a href="#https://w3id.org/kpxl/rel/terms/tendsToAffect" title="https://w3id.org/kpxl/rel/terms/tendsToAffect">has instances that tend to affect instances of</a>
+         <a href="#tendsToAffect" title="https://w3id.org/kpxl/rel/terms/tendsToAffect">has instances that tend to affect instances of</a>
       </li>
       <li>
-         <a href="#https://w3id.org/kpxl/rel/terms/tendsToBeCausedBy" title="https://w3id.org/kpxl/rel/terms/tendsToBeCausedBy">has instances that tend to be caused by instances of</a>
+         <a href="#tendsToBeCausedBy" title="https://w3id.org/kpxl/rel/terms/tendsToBeCausedBy">has instances that tend to be caused by instances of</a>
       </li>
       <li>
-         <a href="#https://w3id.org/kpxl/rel/terms/tendsToBeFollowedBy"
+         <a href="#tendsToBeFollowedBy"
             title="https://w3id.org/kpxl/rel/terms/tendsToBeFollowedBy">has instances that tend to be followed by instances of</a>
       </li>
+      <li>
+         <a href="#tendsToBeIncludedIn"
+            title="https://w3id.org/kpxl/rel/terms/tendsToBeIncludedIn">has instances that tend to be included in instances of</a>
+      </li>
+      <li>
+         <a href="#tendsToBeNecessaryAndSufficientFor"
+            title="https://w3id.org/kpxl/rel/terms/tendsToBeNecessaryAndSufficientFor">has instances that tend to be necessary and sufficient for instances of</a>
+      </li>
+      <li>
+         <a href="#tendsToCause" title="https://w3id.org/kpxl/rel/terms/tendsToCause">has instances that tend to cause instances of</a>
+      </li>
+      <li>
+         <a href="#tendsToCooccurWith"
+            title="https://w3id.org/kpxl/rel/terms/tendsToCooccurWith">has instances that tend to co-occur with instances of</a>
+      </li>
+      <li>
+         <a href="#tendsToContributeTo"
+            title="https://w3id.org/kpxl/rel/terms/tendsToContributeTo">has instances that tend to contribute to instances of</a>
+      </li>
+      <li>
+         <a href="#tendsToDecrease" title="https://w3id.org/kpxl/rel/terms/tendsToDecrease">has instances that tend to decrease instances of</a>
+      </li>
+      <li>
+         <a href="#tendsToEnable" title="https://w3id.org/kpxl/rel/terms/tendsToEnable">has instances that tend to enable instances of</a>
+      </li>
+      <li>
+         <a href="#tendsToFollow" title="https://w3id.org/kpxl/rel/terms/tendsToFollow">has instances that tend to follow instances of</a>
+      </li>
+      <li>
+         <a href="#tendsToHaveDifferentValueFrom"
+            title="https://w3id.org/kpxl/rel/terms/tendsToHaveDifferentValueFrom">has instances that tend to have a different value from instances of</a>
+      </li>
+      <li>
+         <a href="#tendsToHaveLargerValueThan"
+            title="https://w3id.org/kpxl/rel/terms/tendsToHaveLargerValueThan">has instances that tend to have a larger value than instances of</a>
+      </li>
+      <li>
+         <a href="#tendsToHaveSimilarValueAs"
+            title="https://w3id.org/kpxl/rel/terms/tendsToHaveSimilarValueAs">has instances that tend to have a similar value as instances of</a>
+      </li>
+      <li>
+         <a href="#tendsToHaveSmallerValueThan"
+            title="https://w3id.org/kpxl/rel/terms/tendsToHaveSmallerValueThan">has instances that tend to have a smaller value than instances of</a>
+      </li>
+      <li>
+         <a href="#tendsToHaveSameValueAs"
+            title="https://w3id.org/kpxl/rel/terms/tendsToHaveSameValueAs">has instances that tend to have the same value as instances of</a>
+      </li>
+      <li>
+         <a href="#tendsToInclude" title="https://w3id.org/kpxl/rel/terms/tendsToInclude">has instances that tend to include instances of</a>
+      </li>
+      <li>
+         <a href="#tendsToIncrease" title="https://w3id.org/kpxl/rel/terms/tendsToIncrease">has instances that tend to increase instances of</a>
+      </li>
+      <li>
+         <a href="#tendsToInhibit" title="https://w3id.org/kpxl/rel/terms/tendsToInhibit">has instances that tend to inhibit instances of</a>
+      </li>
+      <li>
+         <a href="#tendsToPrevent" title="https://w3id.org/kpxl/rel/terms/tendsToPrevent">has instances that tend to prevent instances of</a>
+      </li>
+      <li>
+         <a href="#tendsToRequire" title="https://w3id.org/kpxl/rel/terms/tendsToRequire">has instances that tend to require instances of</a>
+      </li>
    </ul>
-   <div class="entity" id="https://w3id.org/kpxl/rel/terms/tendsToAffect">
+   <div class="entity" id="tendsToAffect">
       <h3>has instances that tend to affect instances of<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
@@ -142,18 +270,22 @@ This section provides details for each class and property defined by Scientific 
          <dl>
             <dt>has domain</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2002/07/owl#Class">class</span>
+               <a href="http://www.w3.org/2002/07/owl#Class"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#Class">class</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2002/07/owl#Class">class</span>
+               <a href="http://www.w3.org/2002/07/owl#Class"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#Class">class</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
    </div>
-   <div class="entity" id="https://w3id.org/kpxl/rel/terms/tendsToBeCausedBy">
+   <div class="entity" id="tendsToBeCausedBy">
       <h3>has instances that tend to be caused by instances of<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
@@ -173,18 +305,22 @@ This section provides details for each class and property defined by Scientific 
          <dl>
             <dt>has domain</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2002/07/owl#Class">class</span>
+               <a href="http://www.w3.org/2002/07/owl#Class"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#Class">class</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2002/07/owl#Class">class</span>
+               <a href="http://www.w3.org/2002/07/owl#Class"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#Class">class</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
    </div>
-   <div class="entity" id="https://w3id.org/kpxl/rel/terms/tendsToBeFollowedBy">
+   <div class="entity" id="tendsToBeFollowedBy">
       <h3>has instances that tend to be followed by instances of<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
@@ -204,12 +340,646 @@ This section provides details for each class and property defined by Scientific 
          <dl>
             <dt>has domain</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2002/07/owl#Class">class</span>
+               <a href="http://www.w3.org/2002/07/owl#Class"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#Class">class</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2002/07/owl#Class">class</span>
+               <a href="http://www.w3.org/2002/07/owl#Class"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#Class">class</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="tendsToBeIncludedIn">
+      <h3>has instances that tend to be included in instances of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/kpxl/rel/terms/tendsToBeIncludedIn</p>
+      <div class="comment">
+         <span class="markdown">the instances of the subject tend to be spatiotemporally included in instances of the object</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/kpxl/rel/latest/tendsToBeIncludedIn">https://w3id.org/kpxl/rel/latest/tendsToBeIncludedIn</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="http://www.w3.org/2002/07/owl#Class"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#Class">class</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2002/07/owl#Class"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#Class">class</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="tendsToBeNecessaryAndSufficientFor">
+      <h3>has instances that tend to be necessary and sufficient for instances of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/kpxl/rel/terms/tendsToBeNecessaryAndSufficientFor</p>
+      <div class="comment">
+         <span class="markdown">the instances of the subject tend to cause the existence of instances of the object, which would not exist if the subject instances did not exist</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/kpxl/rel/latest/tendsToBeNecessaryAndSufficientFor">https://w3id.org/kpxl/rel/latest/tendsToBeNecessaryAndSufficientFor</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="http://www.w3.org/2002/07/owl#Class"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#Class">class</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2002/07/owl#Class"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#Class">class</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="tendsToCause">
+      <h3>has instances that tend to cause instances of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/kpxl/rel/terms/tendsToCause</p>
+      <div class="comment">
+         <span class="markdown">the instances of the subject tend to cause the existence of instances of the object</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/kpxl/rel/latest/tendsToCause">https://w3id.org/kpxl/rel/latest/tendsToCause</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="http://www.w3.org/2002/07/owl#Class"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#Class">class</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2002/07/owl#Class"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#Class">class</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="tendsToCooccurWith">
+      <h3>has instances that tend to co-occur with instances of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/kpxl/rel/terms/tendsToCooccurWith</p>
+      <div class="comment">
+         <span class="markdown">the instances of the subject tend to be close to instances of the object in terms of space and time</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/kpxl/rel/latest/tendsToCooccurWith">https://w3id.org/kpxl/rel/latest/tendsToCooccurWith</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="http://www.w3.org/2002/07/owl#Class"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#Class">class</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2002/07/owl#Class"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#Class">class</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="tendsToContributeTo">
+      <h3>has instances that tend to contribute to instances of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/kpxl/rel/terms/tendsToContributeTo</p>
+      <div class="comment">
+         <span class="markdown">the instances of the subject tend to positively affect the intensity or frequency of activity instances of the object</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/kpxl/rel/latest/tendsToContributeTo">https://w3id.org/kpxl/rel/latest/tendsToContributeTo</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="http://www.w3.org/2002/07/owl#Class"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#Class">class</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2002/07/owl#Class"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#Class">class</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="tendsToDecrease">
+      <h3>has instances that tend to decrease instances of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/kpxl/rel/terms/tendsToDecrease</p>
+      <div class="comment">
+         <span class="markdown">the instances of the subject tend to cause the value of instances of the object to decrease</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/kpxl/rel/latest/tendsToDecrease">https://w3id.org/kpxl/rel/latest/tendsToDecrease</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="http://www.w3.org/2002/07/owl#Class"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#Class">class</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2002/07/owl#Class"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#Class">class</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="tendsToEnable">
+      <h3>has instances that tend to enable instances of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/kpxl/rel/terms/tendsToEnable</p>
+      <div class="comment">
+         <span class="markdown">the instances of the subject tend to cause activity instances of the object to happen</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/kpxl/rel/latest/tendsToEnable">https://w3id.org/kpxl/rel/latest/tendsToEnable</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="http://www.w3.org/2002/07/owl#Class"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#Class">class</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2002/07/owl#Class"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#Class">class</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="tendsToFollow">
+      <h3>has instances that tend to follow instances of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/kpxl/rel/terms/tendsToFollow</p>
+      <div class="comment">
+         <span class="markdown">the instances of the subject tend to come into existence after instances of the object</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/kpxl/rel/latest/tendsToFollow">https://w3id.org/kpxl/rel/latest/tendsToFollow</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="http://www.w3.org/2002/07/owl#Class"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#Class">class</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2002/07/owl#Class"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#Class">class</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="tendsToHaveDifferentValueFrom">
+      <h3>has instances that tend to have a different value from instances of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/kpxl/rel/terms/tendsToHaveDifferentValueFrom</p>
+      <div class="comment">
+         <span class="markdown">the quantifiable instances of the subject tend to have a value that is different from quantifiable instances of the object</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/kpxl/rel/latest/tendsToHaveDifferentValueFrom">https://w3id.org/kpxl/rel/latest/tendsToHaveDifferentValueFrom</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="http://www.w3.org/2002/07/owl#Class"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#Class">class</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2002/07/owl#Class"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#Class">class</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="tendsToHaveLargerValueThan">
+      <h3>has instances that tend to have a larger value than instances of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/kpxl/rel/terms/tendsToHaveLargerValueThan</p>
+      <div class="comment">
+         <span class="markdown">the quantifiable instances of the subject tend to have a larger value than quantifiable instances of the object</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/kpxl/rel/latest/tendsToHaveLargerValueThan">https://w3id.org/kpxl/rel/latest/tendsToHaveLargerValueThan</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="http://www.w3.org/2002/07/owl#Class"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#Class">class</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2002/07/owl#Class"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#Class">class</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="tendsToHaveSimilarValueAs">
+      <h3>has instances that tend to have a similar value as instances of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/kpxl/rel/terms/tendsToHaveSimilarValueAs</p>
+      <div class="comment">
+         <span class="markdown">the quantifiable instances of the subject tend to have a similar value as quantifiable instances of the object</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/kpxl/rel/latest/tendsToHaveSimilarValueAs">https://w3id.org/kpxl/rel/latest/tendsToHaveSimilarValueAs</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="http://www.w3.org/2002/07/owl#Class"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#Class">class</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2002/07/owl#Class"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#Class">class</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="tendsToHaveSmallerValueThan">
+      <h3>has instances that tend to have a smaller value than instances of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/kpxl/rel/terms/tendsToHaveSmallerValueThan</p>
+      <div class="comment">
+         <span class="markdown">the quantifiable instances of the subject tend to have a smaller value than quantifiable instances of the object</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/kpxl/rel/latest/tendsToHaveSmallerValueThan">https://w3id.org/kpxl/rel/latest/tendsToHaveSmallerValueThan</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="http://www.w3.org/2002/07/owl#Class"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#Class">class</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2002/07/owl#Class"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#Class">class</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="tendsToHaveSameValueAs">
+      <h3>has instances that tend to have the same value as instances of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/kpxl/rel/terms/tendsToHaveSameValueAs</p>
+      <div class="comment">
+         <span class="markdown">the quantifiable instances of the subject tend to have the same value as quantifiable instances of the object</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/kpxl/rel/latest/tendsToHaveSameValueAs">https://w3id.org/kpxl/rel/latest/tendsToHaveSameValueAs</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="http://www.w3.org/2002/07/owl#Class"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#Class">class</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2002/07/owl#Class"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#Class">class</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="tendsToInclude">
+      <h3>has instances that tend to include instances of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/kpxl/rel/terms/tendsToInclude</p>
+      <div class="comment">
+         <span class="markdown">the instances of the subject tend to spatiotemporally include instances of the object</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/kpxl/rel/latest/tendsToInclude">https://w3id.org/kpxl/rel/latest/tendsToInclude</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="http://www.w3.org/2002/07/owl#Class"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#Class">class</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2002/07/owl#Class"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#Class">class</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="tendsToIncrease">
+      <h3>has instances that tend to increase instances of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/kpxl/rel/terms/tendsToIncrease</p>
+      <div class="comment">
+         <span class="markdown">the instances of the subject tend to cause the value of instances of the object to increase</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/kpxl/rel/latest/tendsToIncrease">https://w3id.org/kpxl/rel/latest/tendsToIncrease</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="http://www.w3.org/2002/07/owl#Class"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#Class">class</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2002/07/owl#Class"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#Class">class</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="tendsToInhibit">
+      <h3>has instances that tend to inhibit instances of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/kpxl/rel/terms/tendsToInhibit</p>
+      <div class="comment">
+         <span class="markdown">the instances of the subject tend to negatively affect the intensity or frequency of the activity instances of the object</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/kpxl/rel/latest/tendsToInhibit">https://w3id.org/kpxl/rel/latest/tendsToInhibit</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="http://www.w3.org/2002/07/owl#Class"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#Class">class</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2002/07/owl#Class"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#Class">class</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="tendsToPrevent">
+      <h3>has instances that tend to prevent instances of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/kpxl/rel/terms/tendsToPrevent</p>
+      <div class="comment">
+         <span class="markdown">the instances of the subject tend to cause the activity instances of the object not to happen</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/kpxl/rel/latest/tendsToPrevent">https://w3id.org/kpxl/rel/latest/tendsToPrevent</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="http://www.w3.org/2002/07/owl#Class"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#Class">class</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2002/07/owl#Class"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#Class">class</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="tendsToRequire">
+      <h3>has instances that tend to require instances of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/kpxl/rel/terms/tendsToRequire</p>
+      <div class="comment">
+         <span class="markdown">the instances of the subject tend not to have existed if instances of the object did not exist</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/kpxl/rel/latest/tendsToRequire">https://w3id.org/kpxl/rel/latest/tendsToRequire</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="http://www.w3.org/2002/07/owl#Class"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#Class">class</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2002/07/owl#Class"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#Class">class</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -218,27 +988,11 @@ This section provides details for each class and property defined by Scientific 
 </div><div id="legend">
 <h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <div   class="entity">
-<sup class="type-c" title="Classes">c</sup>: Classes <br/>
 <sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
-<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
-<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
 </div>
 </div>
 </div>
     
-
-
-
-
-<h2 id="desc" class="list">Scientific Relations Ontology <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-
-<p>The Scientific Relations Ontology provides relations between classes of things, which map to the instance-level relations of the SuperPattern ontology.</p>
-
-
-<h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-
-This documentation is generated from the nanopublications that you can find <a href="https://github.com/knowledgepixels/kpxl-ontologies">here</a>.
-
 
 
 

@@ -4,7 +4,7 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <https://w3id.org/kpxl/rel/terms/ScientificRelationsOntology> .
+@base <https://w3id.org/kpxl/rel/terms/ScientificRelationsOntology#> .
 
 <https://w3id.org/kpxl/rel/terms/ScientificRelationsOntology> rdf:type owl:Ontology ;
                                                                <http://purl.org/dc/terms/creator> <https://orcid.org/0000-0002-1267-0234> ;
@@ -81,6 +81,186 @@
                                                       <http://www.w3.org/2004/02/skos/core#definition> "the instances of the subject tend to come into existence before instances of the object"@en .
 
 
+###  https://w3id.org/kpxl/rel/terms/tendsToBeIncludedIn
+<https://w3id.org/kpxl/rel/terms/tendsToBeIncludedIn> rdf:type owl:ObjectProperty ;
+                                                      rdfs:domain owl:Class ;
+                                                      rdfs:range owl:Class ;
+                                                      rdfs:isDefinedBy <https://w3id.org/kpxl/rel/latest/tendsToBeIncludedIn> ;
+                                                      rdfs:label "has instances that tend to be included in instances of"@en ;
+                                                      rdfs:seeAlso <https://w3id.org/linkflows/superpattern/terms/isIncludedIn> ;
+                                                      <http://www.w3.org/2004/02/skos/core#definition> "the instances of the subject tend to be spatiotemporally included in instances of the object"@en .
+
+
+###  https://w3id.org/kpxl/rel/terms/tendsToBeNecessaryAndSufficientFor
+<https://w3id.org/kpxl/rel/terms/tendsToBeNecessaryAndSufficientFor> rdf:type owl:ObjectProperty ;
+                                                                     rdfs:domain owl:Class ;
+                                                                     rdfs:range owl:Class ;
+                                                                     rdfs:isDefinedBy <https://w3id.org/kpxl/rel/latest/tendsToBeNecessaryAndSufficientFor> ;
+                                                                     rdfs:label "has instances that tend to be necessary and sufficient for instances of"@en ;
+                                                                     rdfs:seeAlso <https://w3id.org/linkflows/superpattern/terms/isNecessaryAndSufficientFor> ;
+                                                                     <http://www.w3.org/2004/02/skos/core#definition> "the instances of the subject tend to cause the existence of instances of the object, which would not exist if the subject instances did not exist"@en .
+
+
+###  https://w3id.org/kpxl/rel/terms/tendsToCause
+<https://w3id.org/kpxl/rel/terms/tendsToCause> rdf:type owl:ObjectProperty ;
+                                               rdfs:domain owl:Class ;
+                                               rdfs:range owl:Class ;
+                                               rdfs:isDefinedBy <https://w3id.org/kpxl/rel/latest/tendsToCause> ;
+                                               rdfs:label "has instances that tend to cause instances of"@en ;
+                                               rdfs:seeAlso <https://w3id.org/linkflows/superpattern/terms/causes> ;
+                                               <http://www.w3.org/2004/02/skos/core#definition> "the instances of the subject tend to cause the existence of instances of the object"@en .
+
+
+###  https://w3id.org/kpxl/rel/terms/tendsToContributeTo
+<https://w3id.org/kpxl/rel/terms/tendsToContributeTo> rdf:type owl:ObjectProperty ;
+                                                      rdfs:domain owl:Class ;
+                                                      rdfs:range owl:Class ;
+                                                      rdfs:isDefinedBy <https://w3id.org/kpxl/rel/latest/tendsToContributeTo> ;
+                                                      rdfs:label "has instances that tend to contribute to instances of"@en ;
+                                                      rdfs:seeAlso <https://w3id.org/linkflows/superpattern/terms/contributesTo> ;
+                                                      <http://www.w3.org/2004/02/skos/core#definition> "the instances of the subject tend to positively affect the intensity or frequency of activity instances of the object"@en .
+
+
+###  https://w3id.org/kpxl/rel/terms/tendsToCooccurWith
+<https://w3id.org/kpxl/rel/terms/tendsToCooccurWith> rdf:type owl:ObjectProperty ;
+                                                     rdfs:domain owl:Class ;
+                                                     rdfs:range owl:Class ;
+                                                     rdfs:isDefinedBy <https://w3id.org/kpxl/rel/latest/tendsToCooccurWith> ;
+                                                     rdfs:label "has instances that tend to co-occur with instances of"@en ;
+                                                     rdfs:seeAlso <https://w3id.org/linkflows/superpattern/terms/coOccursWith> ;
+                                                     <http://www.w3.org/2004/02/skos/core#definition> "the instances of the subject tend to be close to instances of the object in terms of space and time"@en .
+
+
+###  https://w3id.org/kpxl/rel/terms/tendsToDecrease
+<https://w3id.org/kpxl/rel/terms/tendsToDecrease> rdf:type owl:ObjectProperty ;
+                                                  rdfs:domain owl:Class ;
+                                                  rdfs:range owl:Class ;
+                                                  rdfs:isDefinedBy <https://w3id.org/kpxl/rel/latest/tendsToDecrease> ;
+                                                  rdfs:label "has instances that tend to decrease instances of"@en ;
+                                                  rdfs:seeAlso <https://w3id.org/linkflows/superpattern/terms/decreases> ;
+                                                  <http://www.w3.org/2004/02/skos/core#definition> "the instances of the subject tend to cause the value of instances of the object to decrease"@en .
+
+
+###  https://w3id.org/kpxl/rel/terms/tendsToEnable
+<https://w3id.org/kpxl/rel/terms/tendsToEnable> rdf:type owl:ObjectProperty ;
+                                                rdfs:domain owl:Class ;
+                                                rdfs:range owl:Class ;
+                                                rdfs:isDefinedBy <https://w3id.org/kpxl/rel/latest/tendsToEnable> ;
+                                                rdfs:label "has instances that tend to enable instances of"@en ;
+                                                rdfs:seeAlso <https://w3id.org/linkflows/superpattern/terms/enables> ;
+                                                <http://www.w3.org/2004/02/skos/core#definition> "the instances of the subject tend to cause activity instances of the object to happen"@en .
+
+
+###  https://w3id.org/kpxl/rel/terms/tendsToFollow
+<https://w3id.org/kpxl/rel/terms/tendsToFollow> rdf:type owl:ObjectProperty ;
+                                                rdfs:domain owl:Class ;
+                                                rdfs:range owl:Class ;
+                                                rdfs:isDefinedBy <https://w3id.org/kpxl/rel/latest/tendsToFollow> ;
+                                                rdfs:label "has instances that tend to follow instances of"@en ;
+                                                rdfs:seeAlso <https://w3id.org/linkflows/superpattern/terms/follows> ;
+                                                <http://www.w3.org/2004/02/skos/core#definition> "the instances of the subject tend to come into existence after instances of the object"@en .
+
+
+###  https://w3id.org/kpxl/rel/terms/tendsToHaveDifferentValueFrom
+<https://w3id.org/kpxl/rel/terms/tendsToHaveDifferentValueFrom> rdf:type owl:ObjectProperty ;
+                                                                rdfs:domain owl:Class ;
+                                                                rdfs:range owl:Class ;
+                                                                rdfs:isDefinedBy <https://w3id.org/kpxl/rel/latest/tendsToHaveDifferentValueFrom> ;
+                                                                rdfs:label "has instances that tend to have a different value from instances of"@en ;
+                                                                rdfs:seeAlso <https://w3id.org/linkflows/superpattern/terms/hasDifferentValueFrom> ;
+                                                                <http://www.w3.org/2004/02/skos/core#definition> "the quantifiable instances of the subject tend to have a value that is different from quantifiable instances of the object"@en .
+
+
+###  https://w3id.org/kpxl/rel/terms/tendsToHaveLargerValueThan
+<https://w3id.org/kpxl/rel/terms/tendsToHaveLargerValueThan> rdf:type owl:ObjectProperty ;
+                                                             rdfs:domain owl:Class ;
+                                                             rdfs:range owl:Class ;
+                                                             rdfs:isDefinedBy <https://w3id.org/kpxl/rel/latest/tendsToHaveLargerValueThan> ;
+                                                             rdfs:label "has instances that tend to have a larger value than instances of"@en ;
+                                                             rdfs:seeAlso <https://w3id.org/linkflows/superpattern/terms/hasLargerValueThan> ;
+                                                             <http://www.w3.org/2004/02/skos/core#definition> "the quantifiable instances of the subject tend to have a larger value than quantifiable instances of the object"@en .
+
+
+###  https://w3id.org/kpxl/rel/terms/tendsToHaveSameValueAs
+<https://w3id.org/kpxl/rel/terms/tendsToHaveSameValueAs> rdf:type owl:ObjectProperty ;
+                                                         rdfs:domain owl:Class ;
+                                                         rdfs:range owl:Class ;
+                                                         rdfs:isDefinedBy <https://w3id.org/kpxl/rel/latest/tendsToHaveSameValueAs> ;
+                                                         rdfs:label "has instances that tend to have the same value as instances of"@en ;
+                                                         rdfs:seeAlso <https://w3id.org/linkflows/superpattern/terms/hasSameValueAs> ;
+                                                         <http://www.w3.org/2004/02/skos/core#definition> "the quantifiable instances of the subject tend to have the same value as quantifiable instances of the object"@en .
+
+
+###  https://w3id.org/kpxl/rel/terms/tendsToHaveSimilarValueAs
+<https://w3id.org/kpxl/rel/terms/tendsToHaveSimilarValueAs> rdf:type owl:ObjectProperty ;
+                                                            rdfs:domain owl:Class ;
+                                                            rdfs:range owl:Class ;
+                                                            rdfs:isDefinedBy <https://w3id.org/kpxl/rel/latest/tendsToHaveSimilarValueAs> ;
+                                                            rdfs:label "has instances that tend to have a similar value as instances of"@en ;
+                                                            rdfs:seeAlso <https://w3id.org/linkflows/superpattern/terms/hasSimilarValueAs> ;
+                                                            <http://www.w3.org/2004/02/skos/core#definition> "the quantifiable instances of the subject tend to have a similar value as quantifiable instances of the object"@en .
+
+
+###  https://w3id.org/kpxl/rel/terms/tendsToHaveSmallerValueThan
+<https://w3id.org/kpxl/rel/terms/tendsToHaveSmallerValueThan> rdf:type owl:ObjectProperty ;
+                                                              rdfs:domain owl:Class ;
+                                                              rdfs:range owl:Class ;
+                                                              rdfs:isDefinedBy <https://w3id.org/kpxl/rel/latest/tendsToHaveSmallerValueThan> ;
+                                                              rdfs:label "has instances that tend to have a smaller value than instances of"@en ;
+                                                              rdfs:seeAlso <https://w3id.org/linkflows/superpattern/terms/hasSmallerValueThan> ;
+                                                              <http://www.w3.org/2004/02/skos/core#definition> "the quantifiable instances of the subject tend to have a smaller value than quantifiable instances of the object"@en .
+
+
+###  https://w3id.org/kpxl/rel/terms/tendsToInclude
+<https://w3id.org/kpxl/rel/terms/tendsToInclude> rdf:type owl:ObjectProperty ;
+                                                 rdfs:domain owl:Class ;
+                                                 rdfs:range owl:Class ;
+                                                 rdfs:isDefinedBy <https://w3id.org/kpxl/rel/latest/tendsToInclude> ;
+                                                 rdfs:label "has instances that tend to include instances of"@en ;
+                                                 rdfs:seeAlso <https://w3id.org/linkflows/superpattern/terms/includes> ;
+                                                 <http://www.w3.org/2004/02/skos/core#definition> "the instances of the subject tend to spatiotemporally include instances of the object"@en .
+
+
+###  https://w3id.org/kpxl/rel/terms/tendsToIncrease
+<https://w3id.org/kpxl/rel/terms/tendsToIncrease> rdf:type owl:ObjectProperty ;
+                                                  rdfs:domain owl:Class ;
+                                                  rdfs:range owl:Class ;
+                                                  rdfs:isDefinedBy <https://w3id.org/kpxl/rel/latest/tendsToIncrease> ;
+                                                  rdfs:label "has instances that tend to increase instances of"@en ;
+                                                  rdfs:seeAlso <https://w3id.org/linkflows/superpattern/terms/increases> ;
+                                                  <http://www.w3.org/2004/02/skos/core#definition> "the instances of the subject tend to cause the value of instances of the object to increase"@en .
+
+
+###  https://w3id.org/kpxl/rel/terms/tendsToInhibit
+<https://w3id.org/kpxl/rel/terms/tendsToInhibit> rdf:type owl:ObjectProperty ;
+                                                 rdfs:domain owl:Class ;
+                                                 rdfs:range owl:Class ;
+                                                 rdfs:isDefinedBy <https://w3id.org/kpxl/rel/latest/tendsToInhibit> ;
+                                                 rdfs:label "has instances that tend to inhibit instances of"@en ;
+                                                 rdfs:seeAlso <https://w3id.org/linkflows/superpattern/terms/inhibits> ;
+                                                 <http://www.w3.org/2004/02/skos/core#definition> "the instances of the subject tend to negatively affect the intensity or frequency of the activity instances of the object"@en .
+
+
+###  https://w3id.org/kpxl/rel/terms/tendsToPrevent
+<https://w3id.org/kpxl/rel/terms/tendsToPrevent> rdf:type owl:ObjectProperty ;
+                                                 rdfs:domain owl:Class ;
+                                                 rdfs:range owl:Class ;
+                                                 rdfs:isDefinedBy <https://w3id.org/kpxl/rel/latest/tendsToPrevent> ;
+                                                 rdfs:label "has instances that tend to prevent instances of"@en ;
+                                                 rdfs:seeAlso <https://w3id.org/linkflows/superpattern/terms/prevents> ;
+                                                 <http://www.w3.org/2004/02/skos/core#definition> "the instances of the subject tend to cause the activity instances of the object not to happen"@en .
+
+
+###  https://w3id.org/kpxl/rel/terms/tendsToRequire
+<https://w3id.org/kpxl/rel/terms/tendsToRequire> rdf:type owl:ObjectProperty ;
+                                                 rdfs:domain owl:Class ;
+                                                 rdfs:range owl:Class ;
+                                                 rdfs:isDefinedBy <https://w3id.org/kpxl/rel/latest/tendsToRequire> ;
+                                                 rdfs:label "has instances that tend to require instances of"@en ;
+                                                 rdfs:seeAlso <https://w3id.org/linkflows/superpattern/terms/requires> ;
+                                                 <http://www.w3.org/2004/02/skos/core#definition> "the instances of the subject tend not to have existed if instances of the object did not exist"@en .
+
+
 #################################################################
 #    Classes
 #################################################################
@@ -89,4 +269,4 @@
 owl:Class rdf:type owl:Class .
 
 
-###  Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
