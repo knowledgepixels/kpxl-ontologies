@@ -73,6 +73,168 @@
 <https://w3id.org/kpxl/rel/terms/tendsToBeFollowedBy> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://w3id.org/linkflows/superpattern/terms/isFollowedBy> .
 <https://w3id.org/kpxl/rel/terms/tendsToBeFollowedBy> <http://www.w3.org/2004/02/skos/core#definition> "the instances of the subject tend to come into existence before instances of the object"@en .
 # 
+# https://w3id.org/kpxl/rel/terms/tendsToBeIncludedIn
+<https://w3id.org/kpxl/rel/terms/tendsToBeIncludedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/kpxl/rel/terms/tendsToBeIncludedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/kpxl/rel/terms/tendsToBeIncludedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/kpxl/rel/terms/tendsToBeIncludedIn> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/kpxl/rel/latest/tendsToBeIncludedIn> .
+<https://w3id.org/kpxl/rel/terms/tendsToBeIncludedIn> <http://www.w3.org/2000/01/rdf-schema#label> "has instances that tend to be included in instances of"@en .
+<https://w3id.org/kpxl/rel/terms/tendsToBeIncludedIn> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://w3id.org/linkflows/superpattern/terms/isIncludedIn> .
+<https://w3id.org/kpxl/rel/terms/tendsToBeIncludedIn> <http://www.w3.org/2004/02/skos/core#definition> "the instances of the subject tend to be spatiotemporally included in instances of the object"@en .
+# 
+# https://w3id.org/kpxl/rel/terms/tendsToBeNecessaryAndSufficientFor
+<https://w3id.org/kpxl/rel/terms/tendsToBeNecessaryAndSufficientFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/kpxl/rel/terms/tendsToBeNecessaryAndSufficientFor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/kpxl/rel/terms/tendsToBeNecessaryAndSufficientFor> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/kpxl/rel/terms/tendsToBeNecessaryAndSufficientFor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/kpxl/rel/latest/tendsToBeNecessaryAndSufficientFor> .
+<https://w3id.org/kpxl/rel/terms/tendsToBeNecessaryAndSufficientFor> <http://www.w3.org/2000/01/rdf-schema#label> "has instances that tend to be necessary and sufficient for instances of"@en .
+<https://w3id.org/kpxl/rel/terms/tendsToBeNecessaryAndSufficientFor> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://w3id.org/linkflows/superpattern/terms/isNecessaryAndSufficientFor> .
+<https://w3id.org/kpxl/rel/terms/tendsToBeNecessaryAndSufficientFor> <http://www.w3.org/2004/02/skos/core#definition> "the instances of the subject tend to cause the existence of instances of the object, which would not exist if the subject instances did not exist"@en .
+# 
+# https://w3id.org/kpxl/rel/terms/tendsToCause
+<https://w3id.org/kpxl/rel/terms/tendsToCause> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/kpxl/rel/terms/tendsToCause> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/kpxl/rel/terms/tendsToCause> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/kpxl/rel/terms/tendsToCause> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/kpxl/rel/latest/tendsToCause> .
+<https://w3id.org/kpxl/rel/terms/tendsToCause> <http://www.w3.org/2000/01/rdf-schema#label> "has instances that tend to cause instances of"@en .
+<https://w3id.org/kpxl/rel/terms/tendsToCause> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://w3id.org/linkflows/superpattern/terms/causes> .
+<https://w3id.org/kpxl/rel/terms/tendsToCause> <http://www.w3.org/2004/02/skos/core#definition> "the instances of the subject tend to cause the existence of instances of the object"@en .
+# 
+# https://w3id.org/kpxl/rel/terms/tendsToContributeTo
+<https://w3id.org/kpxl/rel/terms/tendsToContributeTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/kpxl/rel/terms/tendsToContributeTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/kpxl/rel/terms/tendsToContributeTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/kpxl/rel/terms/tendsToContributeTo> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/kpxl/rel/latest/tendsToContributeTo> .
+<https://w3id.org/kpxl/rel/terms/tendsToContributeTo> <http://www.w3.org/2000/01/rdf-schema#label> "has instances that tend to contribute to instances of"@en .
+<https://w3id.org/kpxl/rel/terms/tendsToContributeTo> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://w3id.org/linkflows/superpattern/terms/contributesTo> .
+<https://w3id.org/kpxl/rel/terms/tendsToContributeTo> <http://www.w3.org/2004/02/skos/core#definition> "the instances of the subject tend to positively affect the intensity or frequency of activity instances of the object"@en .
+# 
+# https://w3id.org/kpxl/rel/terms/tendsToCooccurWith
+<https://w3id.org/kpxl/rel/terms/tendsToCooccurWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/kpxl/rel/terms/tendsToCooccurWith> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/kpxl/rel/terms/tendsToCooccurWith> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/kpxl/rel/terms/tendsToCooccurWith> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/kpxl/rel/latest/tendsToCooccurWith> .
+<https://w3id.org/kpxl/rel/terms/tendsToCooccurWith> <http://www.w3.org/2000/01/rdf-schema#label> "has instances that tend to co-occur with instances of"@en .
+<https://w3id.org/kpxl/rel/terms/tendsToCooccurWith> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://w3id.org/linkflows/superpattern/terms/coOccursWith> .
+<https://w3id.org/kpxl/rel/terms/tendsToCooccurWith> <http://www.w3.org/2004/02/skos/core#definition> "the instances of the subject tend to be close to instances of the object in terms of space and time"@en .
+# 
+# https://w3id.org/kpxl/rel/terms/tendsToDecrease
+<https://w3id.org/kpxl/rel/terms/tendsToDecrease> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/kpxl/rel/terms/tendsToDecrease> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/kpxl/rel/terms/tendsToDecrease> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/kpxl/rel/terms/tendsToDecrease> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/kpxl/rel/latest/tendsToDecrease> .
+<https://w3id.org/kpxl/rel/terms/tendsToDecrease> <http://www.w3.org/2000/01/rdf-schema#label> "has instances that tend to decrease instances of"@en .
+<https://w3id.org/kpxl/rel/terms/tendsToDecrease> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://w3id.org/linkflows/superpattern/terms/decreases> .
+<https://w3id.org/kpxl/rel/terms/tendsToDecrease> <http://www.w3.org/2004/02/skos/core#definition> "the instances of the subject tend to cause the value of instances of the object to decrease"@en .
+# 
+# https://w3id.org/kpxl/rel/terms/tendsToEnable
+<https://w3id.org/kpxl/rel/terms/tendsToEnable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/kpxl/rel/terms/tendsToEnable> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/kpxl/rel/terms/tendsToEnable> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/kpxl/rel/terms/tendsToEnable> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/kpxl/rel/latest/tendsToEnable> .
+<https://w3id.org/kpxl/rel/terms/tendsToEnable> <http://www.w3.org/2000/01/rdf-schema#label> "has instances that tend to enable instances of"@en .
+<https://w3id.org/kpxl/rel/terms/tendsToEnable> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://w3id.org/linkflows/superpattern/terms/enables> .
+<https://w3id.org/kpxl/rel/terms/tendsToEnable> <http://www.w3.org/2004/02/skos/core#definition> "the instances of the subject tend to cause activity instances of the object to happen"@en .
+# 
+# https://w3id.org/kpxl/rel/terms/tendsToFollow
+<https://w3id.org/kpxl/rel/terms/tendsToFollow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/kpxl/rel/terms/tendsToFollow> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/kpxl/rel/terms/tendsToFollow> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/kpxl/rel/terms/tendsToFollow> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/kpxl/rel/latest/tendsToFollow> .
+<https://w3id.org/kpxl/rel/terms/tendsToFollow> <http://www.w3.org/2000/01/rdf-schema#label> "has instances that tend to follow instances of"@en .
+<https://w3id.org/kpxl/rel/terms/tendsToFollow> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://w3id.org/linkflows/superpattern/terms/follows> .
+<https://w3id.org/kpxl/rel/terms/tendsToFollow> <http://www.w3.org/2004/02/skos/core#definition> "the instances of the subject tend to come into existence after instances of the object"@en .
+# 
+# https://w3id.org/kpxl/rel/terms/tendsToHaveDifferentValueFrom
+<https://w3id.org/kpxl/rel/terms/tendsToHaveDifferentValueFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/kpxl/rel/terms/tendsToHaveDifferentValueFrom> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/kpxl/rel/terms/tendsToHaveDifferentValueFrom> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/kpxl/rel/terms/tendsToHaveDifferentValueFrom> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/kpxl/rel/latest/tendsToHaveDifferentValueFrom> .
+<https://w3id.org/kpxl/rel/terms/tendsToHaveDifferentValueFrom> <http://www.w3.org/2000/01/rdf-schema#label> "has instances that tend to have a different value from instances of"@en .
+<https://w3id.org/kpxl/rel/terms/tendsToHaveDifferentValueFrom> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://w3id.org/linkflows/superpattern/terms/hasDifferentValueFrom> .
+<https://w3id.org/kpxl/rel/terms/tendsToHaveDifferentValueFrom> <http://www.w3.org/2004/02/skos/core#definition> "the quantifiable instances of the subject tend to have a value that is different from quantifiable instances of the object"@en .
+# 
+# https://w3id.org/kpxl/rel/terms/tendsToHaveLargerValueThan
+<https://w3id.org/kpxl/rel/terms/tendsToHaveLargerValueThan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/kpxl/rel/terms/tendsToHaveLargerValueThan> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/kpxl/rel/terms/tendsToHaveLargerValueThan> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/kpxl/rel/terms/tendsToHaveLargerValueThan> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/kpxl/rel/latest/tendsToHaveLargerValueThan> .
+<https://w3id.org/kpxl/rel/terms/tendsToHaveLargerValueThan> <http://www.w3.org/2000/01/rdf-schema#label> "has instances that tend to have a larger value than instances of"@en .
+<https://w3id.org/kpxl/rel/terms/tendsToHaveLargerValueThan> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://w3id.org/linkflows/superpattern/terms/hasLargerValueThan> .
+<https://w3id.org/kpxl/rel/terms/tendsToHaveLargerValueThan> <http://www.w3.org/2004/02/skos/core#definition> "the quantifiable instances of the subject tend to have a larger value than quantifiable instances of the object"@en .
+# 
+# https://w3id.org/kpxl/rel/terms/tendsToHaveSameValueAs
+<https://w3id.org/kpxl/rel/terms/tendsToHaveSameValueAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/kpxl/rel/terms/tendsToHaveSameValueAs> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/kpxl/rel/terms/tendsToHaveSameValueAs> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/kpxl/rel/terms/tendsToHaveSameValueAs> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/kpxl/rel/latest/tendsToHaveSameValueAs> .
+<https://w3id.org/kpxl/rel/terms/tendsToHaveSameValueAs> <http://www.w3.org/2000/01/rdf-schema#label> "has instances that tend to have the same value as instances of"@en .
+<https://w3id.org/kpxl/rel/terms/tendsToHaveSameValueAs> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://w3id.org/linkflows/superpattern/terms/hasSameValueAs> .
+<https://w3id.org/kpxl/rel/terms/tendsToHaveSameValueAs> <http://www.w3.org/2004/02/skos/core#definition> "the quantifiable instances of the subject tend to have the same value as quantifiable instances of the object"@en .
+# 
+# https://w3id.org/kpxl/rel/terms/tendsToHaveSimilarValueAs
+<https://w3id.org/kpxl/rel/terms/tendsToHaveSimilarValueAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/kpxl/rel/terms/tendsToHaveSimilarValueAs> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/kpxl/rel/terms/tendsToHaveSimilarValueAs> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/kpxl/rel/terms/tendsToHaveSimilarValueAs> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/kpxl/rel/latest/tendsToHaveSimilarValueAs> .
+<https://w3id.org/kpxl/rel/terms/tendsToHaveSimilarValueAs> <http://www.w3.org/2000/01/rdf-schema#label> "has instances that tend to have a similar value as instances of"@en .
+<https://w3id.org/kpxl/rel/terms/tendsToHaveSimilarValueAs> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://w3id.org/linkflows/superpattern/terms/hasSimilarValueAs> .
+<https://w3id.org/kpxl/rel/terms/tendsToHaveSimilarValueAs> <http://www.w3.org/2004/02/skos/core#definition> "the quantifiable instances of the subject tend to have a similar value as quantifiable instances of the object"@en .
+# 
+# https://w3id.org/kpxl/rel/terms/tendsToHaveSmallerValueThan
+<https://w3id.org/kpxl/rel/terms/tendsToHaveSmallerValueThan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/kpxl/rel/terms/tendsToHaveSmallerValueThan> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/kpxl/rel/terms/tendsToHaveSmallerValueThan> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/kpxl/rel/terms/tendsToHaveSmallerValueThan> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/kpxl/rel/latest/tendsToHaveSmallerValueThan> .
+<https://w3id.org/kpxl/rel/terms/tendsToHaveSmallerValueThan> <http://www.w3.org/2000/01/rdf-schema#label> "has instances that tend to have a smaller value than instances of"@en .
+<https://w3id.org/kpxl/rel/terms/tendsToHaveSmallerValueThan> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://w3id.org/linkflows/superpattern/terms/hasSmallerValueThan> .
+<https://w3id.org/kpxl/rel/terms/tendsToHaveSmallerValueThan> <http://www.w3.org/2004/02/skos/core#definition> "the quantifiable instances of the subject tend to have a smaller value than quantifiable instances of the object"@en .
+# 
+# https://w3id.org/kpxl/rel/terms/tendsToInclude
+<https://w3id.org/kpxl/rel/terms/tendsToInclude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/kpxl/rel/terms/tendsToInclude> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/kpxl/rel/terms/tendsToInclude> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/kpxl/rel/terms/tendsToInclude> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/kpxl/rel/latest/tendsToInclude> .
+<https://w3id.org/kpxl/rel/terms/tendsToInclude> <http://www.w3.org/2000/01/rdf-schema#label> "has instances that tend to include instances of"@en .
+<https://w3id.org/kpxl/rel/terms/tendsToInclude> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://w3id.org/linkflows/superpattern/terms/includes> .
+<https://w3id.org/kpxl/rel/terms/tendsToInclude> <http://www.w3.org/2004/02/skos/core#definition> "the instances of the subject tend to spatiotemporally include instances of the object"@en .
+# 
+# https://w3id.org/kpxl/rel/terms/tendsToIncrease
+<https://w3id.org/kpxl/rel/terms/tendsToIncrease> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/kpxl/rel/terms/tendsToIncrease> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/kpxl/rel/terms/tendsToIncrease> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/kpxl/rel/terms/tendsToIncrease> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/kpxl/rel/latest/tendsToIncrease> .
+<https://w3id.org/kpxl/rel/terms/tendsToIncrease> <http://www.w3.org/2000/01/rdf-schema#label> "has instances that tend to increase instances of"@en .
+<https://w3id.org/kpxl/rel/terms/tendsToIncrease> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://w3id.org/linkflows/superpattern/terms/increases> .
+<https://w3id.org/kpxl/rel/terms/tendsToIncrease> <http://www.w3.org/2004/02/skos/core#definition> "the instances of the subject tend to cause the value of instances of the object to increase"@en .
+# 
+# https://w3id.org/kpxl/rel/terms/tendsToInhibit
+<https://w3id.org/kpxl/rel/terms/tendsToInhibit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/kpxl/rel/terms/tendsToInhibit> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/kpxl/rel/terms/tendsToInhibit> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/kpxl/rel/terms/tendsToInhibit> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/kpxl/rel/latest/tendsToInhibit> .
+<https://w3id.org/kpxl/rel/terms/tendsToInhibit> <http://www.w3.org/2000/01/rdf-schema#label> "has instances that tend to inhibit instances of"@en .
+<https://w3id.org/kpxl/rel/terms/tendsToInhibit> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://w3id.org/linkflows/superpattern/terms/inhibits> .
+<https://w3id.org/kpxl/rel/terms/tendsToInhibit> <http://www.w3.org/2004/02/skos/core#definition> "the instances of the subject tend to negatively affect the intensity or frequency of the activity instances of the object"@en .
+# 
+# https://w3id.org/kpxl/rel/terms/tendsToPrevent
+<https://w3id.org/kpxl/rel/terms/tendsToPrevent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/kpxl/rel/terms/tendsToPrevent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/kpxl/rel/terms/tendsToPrevent> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/kpxl/rel/terms/tendsToPrevent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/kpxl/rel/latest/tendsToPrevent> .
+<https://w3id.org/kpxl/rel/terms/tendsToPrevent> <http://www.w3.org/2000/01/rdf-schema#label> "has instances that tend to prevent instances of"@en .
+<https://w3id.org/kpxl/rel/terms/tendsToPrevent> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://w3id.org/linkflows/superpattern/terms/prevents> .
+<https://w3id.org/kpxl/rel/terms/tendsToPrevent> <http://www.w3.org/2004/02/skos/core#definition> "the instances of the subject tend to cause the activity instances of the object not to happen"@en .
+# 
+# https://w3id.org/kpxl/rel/terms/tendsToRequire
+<https://w3id.org/kpxl/rel/terms/tendsToRequire> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/kpxl/rel/terms/tendsToRequire> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/kpxl/rel/terms/tendsToRequire> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/kpxl/rel/terms/tendsToRequire> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/kpxl/rel/latest/tendsToRequire> .
+<https://w3id.org/kpxl/rel/terms/tendsToRequire> <http://www.w3.org/2000/01/rdf-schema#label> "has instances that tend to require instances of"@en .
+<https://w3id.org/kpxl/rel/terms/tendsToRequire> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://w3id.org/linkflows/superpattern/terms/requires> .
+<https://w3id.org/kpxl/rel/terms/tendsToRequire> <http://www.w3.org/2004/02/skos/core#definition> "the instances of the subject tend not to have existed if instances of the object did not exist"@en .
+# 
 # 
 # 
 # #################################################################
@@ -84,4 +246,4 @@
 # 
 # http://www.w3.org/2002/07/owl#Class
 # 
-# Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
