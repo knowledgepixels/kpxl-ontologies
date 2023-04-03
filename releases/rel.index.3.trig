@@ -1,0 +1,53 @@
+@prefix this: <https://w3id.org/kpxl/rel/np/index/RABSGsKuFN1h-4IhI3wl7x6vfeXwavpfffceFVWL4Gpqo> .
+@prefix sub: <https://w3id.org/kpxl/rel/np/index/RABSGsKuFN1h-4IhI3wl7x6vfeXwavpfffceFVWL4Gpqo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dce: <http://purl.org/dc/elements/1.1/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+
+sub:Head {
+  this: a np:Nanopublication;
+    np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+  this: npx:includesElement <https://w3id.org/kpxl/rel/np/tendsToAffect/RAVWkTOLE4wYyxl36sxA4eROCly_uf6HeifB1epLiu9vM>,
+      <https://w3id.org/kpxl/rel/np/tendsToBeCausedBy/RAZcAKHUEgbDXcplvTPk9qjYVthVrnI2DRv_BBqbQS40E>,
+      <https://w3id.org/kpxl/rel/np/tendsToBeFollowedBy/RA5wUOkrNke6nycovBsgbp7bKqJoO8bc4MIo9eXwNiIa0>,
+      <https://w3id.org/kpxl/rel/np/tendsToBeIncludedIn/RAQtW0Zh_qCNoTuSZ4S6T904ZXliiNubfwPbZa59bwSDc>,
+      <https://w3id.org/kpxl/rel/np/tendsToBeNecessaryAndSufficientFor/RAG_q3AnYWibKAQMoNkFvZVEkmxNm-32wKsMHTG2T8Aj8>,
+      <https://w3id.org/kpxl/rel/np/tendsToCause/RA1RvjyZn7FP9172tBOZRynQGHwTfyr952WTQnXBq5NKo>,
+      <https://w3id.org/kpxl/rel/np/tendsToContributeTo/RAyn8y7gMLNmx5arkWXoqduaHdbC2yLbAq4ktAbmFzOlA>,
+      <https://w3id.org/kpxl/rel/np/tendsToCooccurWith/RAPLRMV5mO8TZjf6g7Zf-fieiLe-eBLdN1s1P7nKF0dsg>,
+      <https://w3id.org/kpxl/rel/np/tendsToDecrease/RAg_s0dkUVarj2bOQ9kZwtnVJ-M_UFpXn4rd8774ELHZY>,
+      <https://w3id.org/kpxl/rel/np/tendsToEnable/RA09XZlngWhvF9sUPqK1a8CbG95o2gCQnJfo3-Hkpsd24>,
+      <https://w3id.org/kpxl/rel/np/tendsToFollow/RAKwQUiK2NnK7DKwwKy8NA-Ag3q4qdSzq-gf5WXYLotRk>,
+      <https://w3id.org/kpxl/rel/np/tendsToHaveDifferentValueFrom/RAyeZYd1j5XeirbbB_pJenUdVFj7MmhZPEnyHPhNZMwIA>,
+      <https://w3id.org/kpxl/rel/np/tendsToHaveLargerValueThan/RAi4Q9M8iPOLCGSXhlDeRBgIABbPWfhxq2_P8geEGWZnc>,
+      <https://w3id.org/kpxl/rel/np/tendsToHaveSameValueAs/RAx2QtWjPB4i1Xxo5pckz-3sHS1Mmn5cmZjfWjJbvaPWc>,
+      <https://w3id.org/kpxl/rel/np/tendsToHaveSimilarValueAs/RAbxhb1JXp3YTpzc0en12obWWlZbbExAyFBo4RzHWV8Go>,
+      <https://w3id.org/kpxl/rel/np/tendsToHaveSmallerValueThan/RAW7pqxAf_l5Shr6hc0G2j_x38N_8ObT3mu3ouaauLqb8>,
+      <https://w3id.org/kpxl/rel/np/tendsToInclude/RAqlS1tPBDHGLYBOyjp6beLPEAcQowkGNQYUHIuNZeY14>,
+      <https://w3id.org/kpxl/rel/np/tendsToIncrease/RA27hQo3hZ5Oll0OlDC-W73DAgepmRmNP9rxdcR5VLqnc>,
+      <https://w3id.org/kpxl/rel/np/tendsToInhibit/RAU7yzxCwg5RK1qx6kpxZlK6H5WNB9sfndbeu4VpqQQnk>,
+      <https://w3id.org/kpxl/rel/np/tendsToPrevent/RA2YCHBzJ75_hWgttI_667Ls54uaAz-SuT0uHKapljzm8>,
+      <https://w3id.org/kpxl/rel/np/tendsToRequire/RAT6Any9ptijZOayj58EzN1FLaEnVyU567Y_f7jsaKe3k> .
+}
+
+sub:provenance {
+  sub:assertion a npx:IndexAssertion .
+}
+
+sub:pubinfo {
+  this: a npx:NanopubIndex;
+    dce:title "Scientific Relations Ontology";
+    dct:created "2023-04-03T11:07:02.576+02:00"^^xsd:dateTime;
+    dct:creator <https://orcid.org/0000-0002-1267-0234>;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/>;
+    npx:supersedes <https://w3id.org/kpxl/rel/np/index/RAN1UkOt5hmxogMVYbtBd_EVr_1BvcsirTPi4VwAvHzzg> .
+}
+
+
