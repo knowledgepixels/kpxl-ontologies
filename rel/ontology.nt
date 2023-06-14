@@ -5,7 +5,7 @@
 <https://w3id.org/kpxl/rel/terms/ScientificRelationsOntology> <http://purl.org/dc/terms/title> "Scientific Relations Ontology" .
 <https://w3id.org/kpxl/rel/terms/ScientificRelationsOntology> <http://purl.org/vocab/vann/preferredNamespacePrefix> "rel" .
 <https://w3id.org/kpxl/rel/terms/ScientificRelationsOntology> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/kpxl/rel/terms/" .
-<https://w3id.org/kpxl/rel/terms/ScientificRelationsOntology> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/kpxl/rel/latest/tendsToAffect> .
+<https://w3id.org/kpxl/rel/terms/ScientificRelationsOntology> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/kpxl/rel/latest/ScientificRelationsOntology> .
 # 
 # 
 # #################################################################

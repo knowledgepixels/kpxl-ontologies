@@ -1,0 +1,79 @@
+<https://w3id.org/kpxl/opo/terms/OpinionOntology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/kpxl/opo/terms/OpinionOntology> <http://purl.org/dc/terms/creator> <https://orcid.org/0000-0002-1267-0234> .
+<https://w3id.org/kpxl/opo/terms/OpinionOntology> <http://purl.org/dc/terms/description> "The Opinion Ontology defines how opinions can be expressed." .
+<https://w3id.org/kpxl/opo/terms/OpinionOntology> <http://purl.org/dc/terms/license> <https://creativecommons.org/publicdomain/zero/1.0/> .
+<https://w3id.org/kpxl/opo/terms/OpinionOntology> <http://purl.org/dc/terms/title> "Opinion Ontology" .
+<https://w3id.org/kpxl/opo/terms/OpinionOntology> <http://purl.org/vocab/vann/preferredNamespacePrefix> "opo" .
+<https://w3id.org/kpxl/opo/terms/OpinionOntology> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/kpxl/opo/terms/" .
+<https://w3id.org/kpxl/opo/terms/OpinionOntology> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/kpxl/opo/latest/OpinionOntology> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/kpxl/opo/terms/thinksIsOverrated
+<https://w3id.org/kpxl/opo/terms/thinksIsOverrated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/kpxl/opo/terms/thinksIsOverrated> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Agent> .
+<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2002/07/owl#Class> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/kpxl/opo/terms/thinksIsOverrated> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/kpxl/opo/terms/thinksIsOverrated> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/kpxl/opo/latest/thinksIsOverrated> .
+<https://w3id.org/kpxl/opo/terms/thinksIsOverrated> <http://www.w3.org/2000/01/rdf-schema#label> "thinks is overrated"@en .
+<https://w3id.org/kpxl/opo/terms/thinksIsOverrated> <http://www.w3.org/2004/02/skos/core#definition> "the subject holds the opinion that the object is overrated by others"@en .
+# 
+# https://w3id.org/kpxl/opo/terms/thinksIsUnderrated
+<https://w3id.org/kpxl/opo/terms/thinksIsUnderrated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/kpxl/opo/terms/thinksIsUnderrated> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Agent> .
+<https://w3id.org/kpxl/opo/terms/thinksIsUnderrated> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/kpxl/opo/terms/thinksIsUnderrated> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/kpxl/opo/latest/thinksIsUnderrated> .
+<https://w3id.org/kpxl/opo/terms/thinksIsUnderrated> <http://www.w3.org/2000/01/rdf-schema#label> "thinks is underrated"@en .
+<https://w3id.org/kpxl/opo/terms/thinksIsUnderrated> <http://www.w3.org/2004/02/skos/core#definition> "the subject holds the opinion that the object is underrated by others"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2002/07/owl#Class
+# 
+# http://xmlns.com/foaf/0.1/Agent
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
