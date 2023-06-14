@@ -13,6 +13,9 @@ fi
   echo
   echo
   cat rel.htaccess
+  echo
+  echo
+  cat opo.htaccess
 ) \
   > htaccess
 
