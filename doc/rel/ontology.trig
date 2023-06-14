@@ -1,6 +1,45 @@
-@prefix this: <https://w3id.org/kpxl/rel/np/tendsToAffect/RAVWkTOLE4wYyxl36sxA4eROCly_uf6HeifB1epLiu9vM> .
-@prefix sub: <https://w3id.org/kpxl/rel/np/tendsToAffect/RAVWkTOLE4wYyxl36sxA4eROCly_uf6HeifB1epLiu9vM#> .
+@prefix this: <https://w3id.org/kpxl/rel/np/ScientificRelationsOntology/RAn0xdUcRhIXoI5LLgGJ71ffghQ2FRwHWFas_vxQs9QVs> .
+@prefix sub: <https://w3id.org/kpxl/rel/np/ScientificRelationsOntology/RAn0xdUcRhIXoI5LLgGJ71ffghQ2FRwHWFas_vxQs9QVs#> .
+@prefix latest: <https://w3id.org/kpxl/rel/latest/ScientificRelationsOntology> .
+@prefix rel: <https://w3id.org/kpxl/rel/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix orcid: <https://orcid.org/> .
 @prefix vann: <http://purl.org/vocab/vann/> .
+
+sub:Head {
+  this: a np:Nanopublication;
+    np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo .
+}
+
+sub:assertion {
+  rel:ScientificRelationsOntology a owl:Ontology;
+    dct:creator orcid:0000-0002-1267-0234;
+    dct:description "The Scientific Relations Ontology defines some general relations between classes.";
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/>;
+    dct:title "Scientific Relations Ontology";
+    vann:preferredNamespacePrefix "rel";
+    vann:preferredNamespaceUri "https://w3id.org/kpxl/rel/terms/";
+    rdfs:isDefinedBy latest: .
+}
+
+sub:provenance {
+  sub:assertion prov:wasAttributedTo orcid:0000-0002-1267-0234 .
+}
+
+sub:pubinfo {
+  this: dct:created "2023-06-14T11:15:19.149+02:00"^^xsd:dateTime;
+    dct:creator orcid:0000-0002-1267-0234;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+@prefix this: <https://w3id.org/kpxl/rel/np/tendsToAffect/RAytya1N4hYE5O23o6TinEF9szxTs-_L7rDCDe2DoVXDQ> .
+@prefix sub: <https://w3id.org/kpxl/rel/np/tendsToAffect/RAytya1N4hYE5O23o6TinEF9szxTs-_L7rDCDe2DoVXDQ#> .
 @prefix latest: <https://w3id.org/kpxl/rel/latest/tendsToAffect> .
 @prefix rel: <https://w3id.org/kpxl/rel/terms/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -21,15 +60,6 @@ sub:Head {
 }
 
 sub:assertion {
-  rel:ScientificRelationsOntology a owl:Ontology;
-    dct:creator orcid:0000-0002-1267-0234;
-    dct:description "The Scientific Relations Ontology defines some general relations between classes.";
-    dct:license <https://creativecommons.org/publicdomain/zero/1.0/>;
-    dct:title "Scientific Relations Ontology";
-    vann:preferredNamespacePrefix "rel";
-    vann:preferredNamespaceUri "https://w3id.org/kpxl/rel/terms/";
-    rdfs:isDefinedBy latest: .
-  
   rel:tendsToAffect a owl:ObjectProperty;
     rdfs:domain owl:Class;
     rdfs:isDefinedBy latest:;
@@ -44,12 +74,11 @@ sub:provenance {
 }
 
 sub:pubinfo {
-  this: dct:created "2023-03-27T11:21:43.468+02:00"^^xsd:dateTime;
+  this: dct:created "2023-06-14T11:15:19.149+02:00"^^xsd:dateTime;
     dct:creator orcid:0000-0002-1267-0234;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/>;
-    <http://purl.org/nanopub/x/supersedes> <https://w3id.org/kpxl/rel/np/tendsToAffect/RAhSant5QirOtVMO8o-96ul9q-PNlxOKgnqStP23WhFSk> .
+    <http://purl.org/nanopub/x/supersedes> <https://w3id.org/kpxl/rel/np/tendsToAffect/RAVWkTOLE4wYyxl36sxA4eROCly_uf6HeifB1epLiu9vM> .
 }
-
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix this: <https://w3id.org/kpxl/rel/np/tendsToBeCausedBy/RAZcAKHUEgbDXcplvTPk9qjYVthVrnI2DRv_BBqbQS40E> .
 @prefix sub: <https://w3id.org/kpxl/rel/np/tendsToBeCausedBy/RAZcAKHUEgbDXcplvTPk9qjYVthVrnI2DRv_BBqbQS40E#> .
@@ -177,6 +206,7 @@ sub:pubinfo {
     dct:creator orcid:0000-0002-1267-0234;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
+
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix this: <https://w3id.org/kpxl/rel/np/tendsToBeNecessaryAndSufficientFor/RAG_q3AnYWibKAQMoNkFvZVEkmxNm-32wKsMHTG2T8Aj8> .
 @prefix sub: <https://w3id.org/kpxl/rel/np/tendsToBeNecessaryAndSufficientFor/RAG_q3AnYWibKAQMoNkFvZVEkmxNm-32wKsMHTG2T8Aj8#> .
@@ -218,6 +248,7 @@ sub:pubinfo {
     dct:creator orcid:0000-0002-1267-0234;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
+
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix this: <https://w3id.org/kpxl/rel/np/tendsToCause/RA1RvjyZn7FP9172tBOZRynQGHwTfyr952WTQnXBq5NKo> .
 @prefix sub: <https://w3id.org/kpxl/rel/np/tendsToCause/RA1RvjyZn7FP9172tBOZRynQGHwTfyr952WTQnXBq5NKo#> .
@@ -259,6 +290,7 @@ sub:pubinfo {
     dct:creator orcid:0000-0002-1267-0234;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
+
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix this: <https://w3id.org/kpxl/rel/np/tendsToContributeTo/RAyn8y7gMLNmx5arkWXoqduaHdbC2yLbAq4ktAbmFzOlA> .
 @prefix sub: <https://w3id.org/kpxl/rel/np/tendsToContributeTo/RAyn8y7gMLNmx5arkWXoqduaHdbC2yLbAq4ktAbmFzOlA#> .
@@ -300,6 +332,7 @@ sub:pubinfo {
     dct:creator orcid:0000-0002-1267-0234;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
+
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix this: <https://w3id.org/kpxl/rel/np/tendsToCooccurWith/RAPLRMV5mO8TZjf6g7Zf-fieiLe-eBLdN1s1P7nKF0dsg> .
 @prefix sub: <https://w3id.org/kpxl/rel/np/tendsToCooccurWith/RAPLRMV5mO8TZjf6g7Zf-fieiLe-eBLdN1s1P7nKF0dsg#> .
@@ -341,6 +374,7 @@ sub:pubinfo {
     dct:creator orcid:0000-0002-1267-0234;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
+
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix this: <https://w3id.org/kpxl/rel/np/tendsToDecrease/RAg_s0dkUVarj2bOQ9kZwtnVJ-M_UFpXn4rd8774ELHZY> .
 @prefix sub: <https://w3id.org/kpxl/rel/np/tendsToDecrease/RAg_s0dkUVarj2bOQ9kZwtnVJ-M_UFpXn4rd8774ELHZY#> .
@@ -382,6 +416,7 @@ sub:pubinfo {
     dct:creator orcid:0000-0002-1267-0234;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
+
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix this: <https://w3id.org/kpxl/rel/np/tendsToEnable/RA09XZlngWhvF9sUPqK1a8CbG95o2gCQnJfo3-Hkpsd24> .
 @prefix sub: <https://w3id.org/kpxl/rel/np/tendsToEnable/RA09XZlngWhvF9sUPqK1a8CbG95o2gCQnJfo3-Hkpsd24#> .
@@ -423,6 +458,7 @@ sub:pubinfo {
     dct:creator orcid:0000-0002-1267-0234;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
+
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix this: <https://w3id.org/kpxl/rel/np/tendsToFollow/RAKwQUiK2NnK7DKwwKy8NA-Ag3q4qdSzq-gf5WXYLotRk> .
 @prefix sub: <https://w3id.org/kpxl/rel/np/tendsToFollow/RAKwQUiK2NnK7DKwwKy8NA-Ag3q4qdSzq-gf5WXYLotRk#> .
@@ -464,6 +500,7 @@ sub:pubinfo {
     dct:creator orcid:0000-0002-1267-0234;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
+
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix this: <https://w3id.org/kpxl/rel/np/tendsToHaveDifferentValueFrom/RAyeZYd1j5XeirbbB_pJenUdVFj7MmhZPEnyHPhNZMwIA> .
 @prefix sub: <https://w3id.org/kpxl/rel/np/tendsToHaveDifferentValueFrom/RAyeZYd1j5XeirbbB_pJenUdVFj7MmhZPEnyHPhNZMwIA#> .
@@ -505,6 +542,7 @@ sub:pubinfo {
     dct:creator orcid:0000-0002-1267-0234;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
+
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix this: <https://w3id.org/kpxl/rel/np/tendsToHaveLargerValueThan/RAi4Q9M8iPOLCGSXhlDeRBgIABbPWfhxq2_P8geEGWZnc> .
 @prefix sub: <https://w3id.org/kpxl/rel/np/tendsToHaveLargerValueThan/RAi4Q9M8iPOLCGSXhlDeRBgIABbPWfhxq2_P8geEGWZnc#> .
@@ -546,6 +584,7 @@ sub:pubinfo {
     dct:creator orcid:0000-0002-1267-0234;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
+
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix this: <https://w3id.org/kpxl/rel/np/tendsToHaveSameValueAs/RAx2QtWjPB4i1Xxo5pckz-3sHS1Mmn5cmZjfWjJbvaPWc> .
 @prefix sub: <https://w3id.org/kpxl/rel/np/tendsToHaveSameValueAs/RAx2QtWjPB4i1Xxo5pckz-3sHS1Mmn5cmZjfWjJbvaPWc#> .
@@ -587,6 +626,7 @@ sub:pubinfo {
     dct:creator orcid:0000-0002-1267-0234;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
+
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix this: <https://w3id.org/kpxl/rel/np/tendsToHaveSimilarValueAs/RAbxhb1JXp3YTpzc0en12obWWlZbbExAyFBo4RzHWV8Go> .
 @prefix sub: <https://w3id.org/kpxl/rel/np/tendsToHaveSimilarValueAs/RAbxhb1JXp3YTpzc0en12obWWlZbbExAyFBo4RzHWV8Go#> .
@@ -628,6 +668,7 @@ sub:pubinfo {
     dct:creator orcid:0000-0002-1267-0234;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
+
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix this: <https://w3id.org/kpxl/rel/np/tendsToHaveSmallerValueThan/RAW7pqxAf_l5Shr6hc0G2j_x38N_8ObT3mu3ouaauLqb8> .
 @prefix sub: <https://w3id.org/kpxl/rel/np/tendsToHaveSmallerValueThan/RAW7pqxAf_l5Shr6hc0G2j_x38N_8ObT3mu3ouaauLqb8#> .
@@ -669,6 +710,7 @@ sub:pubinfo {
     dct:creator orcid:0000-0002-1267-0234;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
+
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix this: <https://w3id.org/kpxl/rel/np/tendsToInclude/RAqlS1tPBDHGLYBOyjp6beLPEAcQowkGNQYUHIuNZeY14> .
 @prefix sub: <https://w3id.org/kpxl/rel/np/tendsToInclude/RAqlS1tPBDHGLYBOyjp6beLPEAcQowkGNQYUHIuNZeY14#> .
@@ -710,6 +752,7 @@ sub:pubinfo {
     dct:creator orcid:0000-0002-1267-0234;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
+
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix this: <https://w3id.org/kpxl/rel/np/tendsToIncrease/RA27hQo3hZ5Oll0OlDC-W73DAgepmRmNP9rxdcR5VLqnc> .
 @prefix sub: <https://w3id.org/kpxl/rel/np/tendsToIncrease/RA27hQo3hZ5Oll0OlDC-W73DAgepmRmNP9rxdcR5VLqnc#> .
@@ -751,6 +794,7 @@ sub:pubinfo {
     dct:creator orcid:0000-0002-1267-0234;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
+
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix this: <https://w3id.org/kpxl/rel/np/tendsToInhibit/RAU7yzxCwg5RK1qx6kpxZlK6H5WNB9sfndbeu4VpqQQnk> .
 @prefix sub: <https://w3id.org/kpxl/rel/np/tendsToInhibit/RAU7yzxCwg5RK1qx6kpxZlK6H5WNB9sfndbeu4VpqQQnk#> .
@@ -792,6 +836,7 @@ sub:pubinfo {
     dct:creator orcid:0000-0002-1267-0234;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
+
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix this: <https://w3id.org/kpxl/rel/np/tendsToPrevent/RA2YCHBzJ75_hWgttI_667Ls54uaAz-SuT0uHKapljzm8> .
 @prefix sub: <https://w3id.org/kpxl/rel/np/tendsToPrevent/RA2YCHBzJ75_hWgttI_667Ls54uaAz-SuT0uHKapljzm8#> .
@@ -833,6 +878,7 @@ sub:pubinfo {
     dct:creator orcid:0000-0002-1267-0234;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
+
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix this: <https://w3id.org/kpxl/rel/np/tendsToRequire/RAT6Any9ptijZOayj58EzN1FLaEnVyU567Y_f7jsaKe3k> .
 @prefix sub: <https://w3id.org/kpxl/rel/np/tendsToRequire/RAT6Any9ptijZOayj58EzN1FLaEnVyU567Y_f7jsaKe3k#> .
@@ -874,3 +920,4 @@ sub:pubinfo {
     dct:creator orcid:0000-0002-1267-0234;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
 }
+

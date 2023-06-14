@@ -16,7 +16,7 @@
         <terms:title>Scientific Relations Ontology</terms:title>
         <vann:preferredNamespacePrefix>rel</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>https://w3id.org/kpxl/rel/terms/</vann:preferredNamespaceUri>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/kpxl/rel/latest/tendsToAffect"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/kpxl/rel/latest/ScientificRelationsOntology"/>
     </owl:Ontology>
     
 

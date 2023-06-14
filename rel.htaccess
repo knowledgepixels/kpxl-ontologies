@@ -1,7 +1,8 @@
 RewriteRule ^rel/terms/(.+)$ https://w3id.org/kpxl/rel/latest/$1 [R=302,L]
 RewriteRule ^rel/np/.+/(RA[A-Za-z0-9_\-]{43})$ http://purl.org/np/$1 [R=302,L]
 
-RewriteRule ^rel/latest/tendsToAffect$ http://purl.org/np/RAVWkTOLE4wYyxl36sxA4eROCly_uf6HeifB1epLiu9vM [R=302,L]
+RewriteRule ^rel/latest/ScientificRelationsOntology$ http://purl.org/np/RAn0xdUcRhIXoI5LLgGJ71ffghQ2FRwHWFas_vxQs9QVs [R=302,L]
+RewriteRule ^rel/latest/tendsToAffect$ http://purl.org/np/RAytya1N4hYE5O23o6TinEF9szxTs-_L7rDCDe2DoVXDQ [R=302,L]
 RewriteRule ^rel/latest/tendsToBeCausedBy$ http://purl.org/np/RAZcAKHUEgbDXcplvTPk9qjYVthVrnI2DRv_BBqbQS40E [R=302,L]
 RewriteRule ^rel/latest/tendsToBeFollowedBy$ http://purl.org/np/RA5wUOkrNke6nycovBsgbp7bKqJoO8bc4MIo9eXwNiIa0 [R=302,L]
 RewriteRule ^rel/latest/tendsToBeIncludedIn$ http://purl.org/np/RAQtW0Zh_qCNoTuSZ4S6T904ZXliiNubfwPbZa59bwSDc [R=302,L]
@@ -23,4 +24,4 @@ RewriteRule ^rel/latest/tendsToInhibit$ http://purl.org/np/RAU7yzxCwg5RK1qx6kpxZ
 RewriteRule ^rel/latest/tendsToPrevent$ http://purl.org/np/RA2YCHBzJ75_hWgttI_667Ls54uaAz-SuT0uHKapljzm8 [R=302,L]
 RewriteRule ^rel/latest/tendsToRequire$ http://purl.org/np/RAT6Any9ptijZOayj58EzN1FLaEnVyU567Y_f7jsaKe3k [R=302,L]
 
-RewriteRule ^rel/latest/index$ http://purl.org/np/RABSGsKuFN1h-4IhI3wl7x6vfeXwavpfffceFVWL4Gpqo [R=302,L]
+RewriteRule ^rel/latest/index$ http://purl.org/np/RA1dTv6qnBM22YSoXp9Dqz0pczmv4QriwZOLkoNfExNAM [R=302,L]

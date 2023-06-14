@@ -13,7 +13,7 @@
                                                                <http://purl.org/dc/terms/title> "Scientific Relations Ontology" ;
                                                                <http://purl.org/vocab/vann/preferredNamespacePrefix> "rel" ;
                                                                <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/kpxl/rel/terms/" ;
-                                                               rdfs:isDefinedBy <https://w3id.org/kpxl/rel/latest/tendsToAffect> .
+                                                               rdfs:isDefinedBy <https://w3id.org/kpxl/rel/latest/ScientificRelationsOntology> .
 
 #################################################################
 #    Annotation properties

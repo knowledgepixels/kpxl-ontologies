@@ -46,7 +46,7 @@
     "@value" : "https://w3id.org/kpxl/rel/terms/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/kpxl/rel/latest/tendsToAffect"
+    "@id" : "https://w3id.org/kpxl/rel/latest/ScientificRelationsOntology"
   } ]
 }, {
   "@id" : "https://w3id.org/kpxl/rel/terms/tendsToAffect",

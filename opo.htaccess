@@ -1,0 +1,8 @@
+RewriteRule ^opo/terms/(.+)$ https://w3id.org/kpxl/opo/latest/$1 [R=302,L]
+RewriteRule ^opo/np/.+/(RA[A-Za-z0-9_\-]{43})$ http://purl.org/np/$1 [R=302,L]
+
+RewriteRule ^opo/latest/OpinionOntology$ http://purl.org/np/RAJMk0QoVAPSLUa33c8tWqZQ41VpVNYRc_MMVwR3-c0fU [R=302,L]
+RewriteRule ^opo/latest/thinksIsOverrated$ http://purl.org/np/RAQpTSS1gac4yddlrQn0_sGFAR_pYFgKF22O0ZE8O8df8 [R=302,L]
+RewriteRule ^opo/latest/thinksIsUnderrated$ http://purl.org/np/RAjrXKCuC4WmSlvBH2kbVRreh24-dU8o4ZLBjnLlsKjGw [R=302,L]
+
+RewriteRule ^opo/latest/index$ http://purl.org/np/RA_HPGSLNnQqd2mi6Zy2z9hpQSv_GL-uso5XI_0aFmosY [R=302,L]

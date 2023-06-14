@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+ <link rel="stylesheet" href="resources/primer.css" media="screen" />    <link rel="stylesheet" href="resources/rec.css" media="screen" />    <link rel="stylesheet" href="resources/extra.css" media="screen" />    <link rel="stylesheet" href="resources/owl.css" media="screen" />    <title>Opinion Ontology</title>
+
+
+<!-- SCHEMA.ORG METADATA -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://w3id.org/kpxl/opo/terms/","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/kpxl/opo/terms/","name":"Opinion Ontology", "headline":"The Opinion Ontology defines how opinions can be expressed.", "datePublished":"Wed Jun 14 11:20:58 CEST 2023", "license":"https://creativecommons.org/publicdomain/zero/1.0/", "author":[{"@type":"Person","name":"https://orcid.org/0000-0002-1267-0234","url":"https://orcid.org/0000-0002-1267-0234"}]}</script>
+
+<script src="resources/jquery.js"></script> 
+<script src="resources/marked.min.js"></script> 
+    <script> 
+function loadHash() {
+  jQuery(".markdown").each(function(el){jQuery(this).after(marked(jQuery(this).text())).remove()});
+	var hash = location.hash;
+	if($(hash).offset()!=null){
+	  $('html, body').animate({scrollTop: $(hash).offset().top}, 0);
+}
+	loadTOC();
+}
+function loadTOC(){
+	//process toc dynamically
+	  var t='<h2>Table of contents</h2><ul>';i = 1;j=0;
+	  jQuery(".list").each(function(){
+		if(jQuery(this).is('h2')){
+			if(j>0){
+				t+='</ul>';
+				j=0;
+			}
+			t+= '<li>'+i+'. <a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
+			i++;
+		}
+		if(jQuery(this).is('h3')){
+			if(j==0){
+				t+='<ul>';
+			}
+			j++;
+			t+= '<li>'+(i-1)+'.'+j+'. '+'<a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
+		}
+	  });
+	  t+='</ul>';
+	  $("#toc").html(t); 
+}
+$(function(){
+    loadHash();
+}); $.fn.ignore = function(sel){
+        return this.clone().find(sel||">*").remove().end();
+ }; 
+   </script> 
+  </head> 
+
+<body>
+<div class="container">
+<div class="head">
+<div style="float:right">language <a href="index-en.html"><b>en</b></a> </div>
+<h1>Opinion Ontology</h1>
+
+
+<dl>
+<dt>Authors:</dt>
+<dd><a href="https://orcid.org/0000-0002-1267-0234"> Tobias Kuhn</a></dd>
+
+<dt>Download serialization:</dt><dd><span><a href="ontology.jsonld" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.rdf" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License:</dt><dd><a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank"><img src="https://img.shields.io/badge/License-https://creativecommons.org/publicdomain/zero/1.0/-blue.svg" alt="https://creativecommons.org/publicdomain/zero/1.0/" /></a>
+</dd><!-- <dt>Evaluation:</dt><dd><a href="OOPSEvaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --><dt>Cite as:</dt>
+<dd> Tobias Kuhn. Opinion Ontology.</dd>
+</dl>
+
+<a href="provenance/provenance-en.html" target="_blank">Provenance of this page</a><hr/>
+</div>
+<div class="status">
+<div>
+<span>Ontology Specification Draft</span>
+</div>
+</div>     <div id="abstract"><h2>Abstract</h2><span class="markdown">
+The Opinion Ontology defines how opinions can be expressed.</span>
+</div>
+<div id="toc"></div> 
+
+<h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+
+This documentation is generated from the nanopublications that you can find <a href="https://github.com/knowledgepixels/kpxl-ontologies">here</a>.
+
+
+<!--OVERVIEW SECTION-->
+    <div id="overview"><h2 id="overv" class="list">Opinion Ontology: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+This ontology has the following classes and properties.</span>
+<h4>Object Properties</h4><ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
+   <li>
+      <a href="#thinksIsOverrated" title="https://w3id.org/kpxl/opo/terms/thinksIsOverrated">thinks is overrated</a>
+   </li>
+   <li>
+      <a href="#thinksIsUnderrated"
+         title="https://w3id.org/kpxl/opo/terms/thinksIsUnderrated">thinks is underrated</a>
+   </li>
+</ul>
+</div>
+  
+
+
+<h2 id="desc" class="list">Opinion Ontology <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+
+<p>The Opinion Ontology defines how opinions about things can be expressed.</p>
+
+
+<!--CROSSREF SECTION-->
+   <div id="crossref"><h2 id="crossreference" class="list">Cross-reference for Opinion Ontology classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by Opinion Ontology.
+<div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+   <h3 id="properties" class="list">Object Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#thinksIsOverrated" title="https://w3id.org/kpxl/opo/terms/thinksIsOverrated">thinks is overrated</a>
+      </li>
+      <li>
+         <a href="#thinksIsUnderrated"
+            title="https://w3id.org/kpxl/opo/terms/thinksIsUnderrated">thinks is underrated</a>
+      </li>
+   </ul>
+   <div class="entity" id="thinksIsOverrated">
+      <h3>thinks is overrated<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/kpxl/opo/terms/thinksIsOverrated</p>
+      <div class="comment">
+         <span class="markdown">the subject holds the opinion that the object is overrated by others</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/kpxl/opo/latest/thinksIsOverrated">https://w3id.org/kpxl/opo/latest/thinksIsOverrated</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="http://xmlns.com/foaf/0.1/Agent"
+                  target="_blank"
+                  title="http://xmlns.com/foaf/0.1/Agent">agent</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2002/07/owl#Class"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#Class">class</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="thinksIsUnderrated">
+      <h3>thinks is underrated<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/kpxl/opo/terms/thinksIsUnderrated</p>
+      <div class="comment">
+         <span class="markdown">the subject holds the opinion that the object is underrated by others</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/kpxl/opo/latest/thinksIsUnderrated">https://w3id.org/kpxl/opo/latest/thinksIsUnderrated</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="http://xmlns.com/foaf/0.1/Agent"
+                  target="_blank"
+                  title="http://xmlns.com/foaf/0.1/Agent">agent</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2002/07/owl#Class"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#Class">class</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+</div>
+</div>
+</div>
+    
+
+
+

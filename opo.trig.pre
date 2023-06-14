@@ -1,0 +1,140 @@
+# Use this file (with '.pre' extension) for editing. The respective file
+# without that extension is automatically generated.
+
+
+# Introduce ontology:
+
+@prefix : <https://w3id.org/kpxl/opo/np/OpinionOntology/> .
+@prefix latest: <https://w3id.org/kpxl/opo/latest/OpinionOntology> .
+@prefix opo: <https://w3id.org/kpxl/opo/terms/> .
+@prefix kpxl: <https://w3id.org/kpxl/principles/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+:Head {
+  : a np:Nanopublication;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  opo:OpinionOntology a owl:Ontology ;
+    vann:preferredNamespaceUri "https://w3id.org/kpxl/opo/terms/" ;
+    vann:preferredNamespacePrefix "opo" ;
+    dct:title "Opinion Ontology" ;
+    dct:description "The Opinion Ontology defines how opinions can be expressed." ;
+    dct:creator orcid:0000-0002-1267-0234 ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    rdfs:isDefinedBy latest: .
+}
+
+:provenance {
+  :assertion prov:wasAttributedTo orcid:0000-0002-1267-0234 .
+}
+
+:pubinfo {
+  : dct:created "2023-06-14T11:20:50.721+02:00"^^xsd:dateTime ;
+    dct:creator orcid:0000-0002-1267-0234 ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+
+# Introduce properties:
+
+@prefix : <https://w3id.org/kpxl/opo/np/thinksIsOverrated/> .
+@prefix latest: <https://w3id.org/kpxl/opo/latest/thinksIsOverrated> .
+@prefix opo: <https://w3id.org/kpxl/opo/terms/> .
+@prefix kpxl: <https://w3id.org/kpxl/principles/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+:Head {
+  : a np:Nanopublication;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  opo:thinksIsOverrated rdfs:label "thinks is overrated"@en ;
+    a owl:ObjectProperty ;
+    rdfs:domain foaf:Agent ;
+    rdfs:range owl:Class ;
+    skos:definition "the subject holds the opinion that the object is overrated by others"@en ;
+    rdfs:isDefinedBy latest: .
+}
+
+:provenance {
+  :assertion prov:wasAttributedTo orcid:0000-0002-1267-0234 .
+}
+
+:pubinfo {
+  : dct:created "2023-06-14T11:20:50.721+02:00"^^xsd:dateTime ;
+    dct:creator orcid:0000-0002-1267-0234 ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}
+
+@prefix : <https://w3id.org/kpxl/opo/np/thinksIsUnderrated/> .
+@prefix latest: <https://w3id.org/kpxl/opo/latest/thinksIsUnderrated> .
+@prefix opo: <https://w3id.org/kpxl/opo/terms/> .
+@prefix kpxl: <https://w3id.org/kpxl/principles/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sp: <https://w3id.org/linkflows/superpattern/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+:Head {
+  : a np:Nanopublication;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  opo:thinksIsUnderrated rdfs:label "thinks is underrated"@en ;
+    a owl:ObjectProperty ;
+    rdfs:domain foaf:Agent ;
+    rdfs:range owl:Class ;
+    skos:definition "the subject holds the opinion that the object is underrated by others"@en ;
+    rdfs:isDefinedBy latest: .
+}
+
+:provenance {
+  :assertion prov:wasAttributedTo orcid:0000-0002-1267-0234 .
+}
+
+:pubinfo {
+  : dct:created "2023-06-14T11:20:50.721+02:00"^^xsd:dateTime ;
+    dct:creator orcid:0000-0002-1267-0234 ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+}

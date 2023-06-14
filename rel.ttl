@@ -24,7 +24,7 @@
   <http://purl.org/dc/terms/title> "Scientific Relations Ontology";
   <http://purl.org/vocab/vann/preferredNamespacePrefix> "rel";
   <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/kpxl/rel/terms/";
-  <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/kpxl/rel/latest/tendsToAffect> .
+  <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/kpxl/rel/latest/ScientificRelationsOntology> .
 
 <https://w3id.org/kpxl/rel/terms/tendsToAffect> a <http://www.w3.org/2002/07/owl#ObjectProperty>;
   <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Class>;
